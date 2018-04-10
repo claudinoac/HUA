@@ -1,0 +1,2183 @@
+EESchema Schematic File Version 4
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:HUA-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 4250 2350 2    39   Input ~ 0
+~RESET
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5A1382EB
+P 2300 850
+F 0 "#PWR?" H 2300 700 50  0001 C CNN
+F 1 "+5V" H 2300 990 50  0000 C CNN
+F 2 "" H 2300 850 50  0000 C CNN
+F 3 "" H 2300 850 50  0000 C CNN
+	1    2300 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5A1385CF
+P 2250 3250
+F 0 "#PWR?" H 2250 3000 50  0001 C CNN
+F 1 "GND" H 2250 3100 50  0000 C CNN
+F 2 "" H 2250 3250 50  0000 C CNN
+F 3 "" H 2250 3250 50  0000 C CNN
+	1    2250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:Crystal_Small Y?
+U 1 1 5A1387D3
+P 1150 1000
+F 0 "Y?" H 1150 1100 50  0000 C CNN
+F 1 "16000" H 1150 900 50  0000 C CNN
+F 2 "w_pth_resistors:RC03" H 1150 1000 50  0001 C CNN
+F 3 "" H 1150 1000 50  0000 C CNN
+	1    1150 1000
+	-1   0    0    1   
+$EndComp
+Text GLabel 4250 1500 2    47   UnSpc ~ 0
+XTAL1
+Text GLabel 4250 1600 2    47   UnSpc ~ 0
+XTAL2
+$Comp
+L ElectricKettle-rescue:C_Small C?
+U 1 1 5A138B55
+P 1300 1200
+F 0 "C?" H 1310 1270 50  0000 L CNN
+F 1 "100p" H 1050 1150 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 1300 1200 50  0001 C CNN
+F 3 "" H 1300 1200 50  0000 C CNN
+	1    1300 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L ElectricKettle-rescue:C_Small C?
+U 1 1 5A138BAC
+P 1000 1200
+F 0 "C?" H 1010 1270 50  0000 L CNN
+F 1 "100p" H 1010 1120 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 1000 1200 50  0001 C CNN
+F 3 "" H 1000 1200 50  0000 C CNN
+	1    1000 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5A138E28
+P 1150 1400
+F 0 "#PWR?" H 1150 1150 50  0001 C CNN
+F 1 "GND" H 1150 1250 50  0000 C CNN
+F 2 "" H 1150 1400 50  0000 C CNN
+F 3 "" H 1150 1400 50  0000 C CNN
+	1    1150 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 900  1000 0    47   UnSpc ~ 0
+XTAL1
+Text GLabel 1400 1000 2    47   UnSpc ~ 0
+XTAL2
+Text GLabel 5800 2100 0    47   Input ~ 0
+~CS
+Text GLabel 5850 2200 0    47   Input ~ 0
+SCK
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5A13B0D4
+P 5750 2450
+F 0 "#PWR?" H 5750 2200 50  0001 C CNN
+F 1 "GND" H 5750 2300 47  0000 C CNN
+F 2 "" H 5750 2450 50  0000 C CNN
+F 3 "" H 5750 2450 50  0000 C CNN
+	1    5750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5A13B263
+P 5700 2300
+F 0 "#PWR?" H 5700 2150 50  0001 C CNN
+F 1 "+5V" H 5700 2440 47  0000 C CNN
+F 2 "" H 5700 2300 50  0000 C CNN
+F 3 "" H 5700 2300 50  0000 C CNN
+	1    5700 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ElectricKettle-rescue:R R?
+U 1 1 5A13C0D9
+P 2100 1200
+F 0 "R?" V 2180 1200 50  0000 C CNN
+F 1 "1k2" V 2100 1200 50  0000 C CNN
+F 2 "w_pth_resistors:RC03" V 2030 1200 50  0001 C CNN
+F 3 "" H 2100 1200 50  0000 C CNN
+	1    2100 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L ElectricKettle-rescue:Led_Small D?
+U 1 1 5A13C248
+P 1750 1400
+F 0 "D?" H 1700 1300 50  0000 L CNN
+F 1 "MCU_LED" H 1600 1550 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 1750 1400 50  0001 C CNN
+F 3 "" V 1750 1400 50  0000 C CNN
+	1    1750 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5A13C57D
+P 1750 1500
+F 0 "#PWR?" H 1750 1250 50  0001 C CNN
+F 1 "GND" H 1750 1350 50  0000 C CNN
+F 2 "" H 1750 1500 50  0000 C CNN
+F 3 "" H 1750 1500 50  0000 C CNN
+	1    1750 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 2500 2    47   Input ~ 0
+RX
+Text GLabel 4250 2600 2    47   Output ~ 0
+TX
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5A13CB29
+P 1500 2900
+F 0 "#PWR?" H 1500 2650 50  0001 C CNN
+F 1 "GND" H 1500 2750 50  0000 C CNN
+F 2 "" H 1500 2900 50  0000 C CNN
+F 3 "" H 1500 2900 50  0000 C CNN
+	1    1500 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 2450 2    47   Input ~ 0
+~RESET
+$Comp
+L ElectricKettle-rescue:R R?
+U 1 1 5A13CD76
+P 1500 2150
+F 0 "R?" V 1580 2150 50  0000 C CNN
+F 1 "470" V 1500 2150 50  0000 C CNN
+F 2 "w_pth_resistors:RC03" V 1430 2150 50  0001 C CNN
+F 3 "" H 1500 2150 50  0000 C CNN
+	1    1500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5A13CE61
+P 1500 2000
+F 0 "#PWR?" H 1500 1850 50  0001 C CNN
+F 1 "+5V" H 1500 2140 50  0000 C CNN
+F 2 "" H 1500 2000 50  0000 C CNN
+F 3 "" H 1500 2000 50  0000 C CNN
+	1    1500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:C_Small C?
+U 1 1 5A13CE94
+P 1500 2650
+F 0 "C?" H 1510 2720 50  0000 L CNN
+F 1 "100n" H 1510 2570 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 1500 2650 50  0001 C CNN
+F 3 "" H 1500 2650 50  0000 C CNN
+	1    1500 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 900  2350 900 
+Wire Wire Line
+	2250 3100 2250 3200
+Wire Wire Line
+	2250 3200 2350 3200
+Wire Wire Line
+	2250 3100 2350 3100
+Connection ~ 2250 3200
+Wire Wire Line
+	1300 1100 1300 1000
+Wire Wire Line
+	1250 1000 1300 1000
+Wire Wire Line
+	900  1000 1000 1000
+Wire Wire Line
+	1000 1000 1000 1100
+Wire Wire Line
+	1000 1300 1000 1350
+Wire Wire Line
+	1000 1350 1150 1350
+Wire Wire Line
+	1300 1350 1300 1300
+Wire Wire Line
+	1150 1350 1150 1400
+Connection ~ 1150 1350
+Connection ~ 1000 1000
+Connection ~ 1300 1000
+Wire Wire Line
+	5700 2300 5850 2300
+Wire Wire Line
+	2250 1200 2300 1200
+Connection ~ 2300 900 
+Connection ~ 2300 1200
+Wire Wire Line
+	2300 1500 2350 1500
+Wire Wire Line
+	1950 1200 1750 1200
+Wire Wire Line
+	1750 1200 1750 1300
+Wire Wire Line
+	1400 2450 1500 2450
+Wire Wire Line
+	1500 2300 1500 2450
+Connection ~ 1500 2450
+$Comp
+L ElectricKettle-rescue:SW_PUSH_SMALL SW?
+U 1 1 5A13D299
+P 1300 2550
+F 0 "SW?" V 1450 2550 47  0000 C CNN
+F 1 "RESET" V 1250 2750 39  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 1300 2550 50  0001 C CNN
+F 3 "" H 1300 2550 50  0000 C CNN
+	1    1300 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 2650 1200 2850
+Wire Wire Line
+	1200 2850 1500 2850
+Wire Wire Line
+	1500 2750 1500 2850
+Connection ~ 1500 2850
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5A141F6F
+P 6850 1400
+F 0 "#PWR?" H 6850 1150 50  0001 C CNN
+F 1 "GND" H 6850 1250 50  0000 C CNN
+F 2 "" H 6850 1400 50  0000 C CNN
+F 3 "" H 6850 1400 50  0000 C CNN
+	1    6850 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 900  6150 950 
+Wire Wire Line
+	6100 950  6150 950 
+Connection ~ 6150 950 
+Wire Wire Line
+	6850 1250 6850 1350
+Wire Wire Line
+	6350 900  6350 950 
+Connection ~ 6350 950 
+Wire Wire Line
+	6350 1300 6350 1350
+Connection ~ 6350 1350
+$Comp
+L ElectricKettle-rescue:CP C?
+U 1 1 5A142A83
+P 6350 1150
+F 0 "C?" H 6375 1250 50  0000 L CNN
+F 1 "100u" H 6400 1050 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 6388 1000 50  0001 C CNN
+F 3 "" H 6350 1150 50  0000 C CNN
+	1    6350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:CP C?
+U 1 1 5A142DAA
+P 7350 1150
+F 0 "C?" H 7375 1250 50  0000 L CNN
+F 1 "10u" H 7400 1050 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 7388 1000 50  0001 C CNN
+F 3 "" H 7350 1150 50  0000 C CNN
+	1    7350 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 900  7350 950 
+Wire Wire Line
+	7250 950  7350 950 
+Wire Wire Line
+	7350 1350 7350 1300
+Connection ~ 6850 1350
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5A142F63
+P 7350 900
+F 0 "#PWR?" H 7350 750 50  0001 C CNN
+F 1 "+5V" H 7350 1040 50  0000 C CNN
+F 2 "" H 7350 900 50  0000 C CNN
+F 3 "" H 7350 900 50  0000 C CNN
+	1    7350 900 
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 950 
+$Comp
+L ElectricKettle-rescue:PWR_FLAG #FLG?
+U 1 1 5A1431FA
+P 6350 900
+F 0 "#FLG?" H 6350 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 6350 1080 50  0001 C CNN
+F 2 "" H 6350 900 50  0000 C CNN
+F 3 "" H 6350 900 50  0000 C CNN
+	1    6350 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:PWR_FLAG #FLG?
+U 1 1 5A144B85
+P 7900 1250
+F 0 "#FLG?" H 7900 1345 50  0001 C CNN
+F 1 "PWR_FLAG" H 7900 1430 50  0001 C CNN
+F 2 "" H 7900 1250 50  0000 C CNN
+F 3 "" H 7900 1250 50  0000 C CNN
+	1    7900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1350 7900 1250
+Connection ~ 7350 1350
+Wire Notes Line
+	600  600  5000 600 
+Wire Notes Line
+	600  600  600  3850
+Wire Notes Line
+	5000 600  5000 3850
+Text Notes 2400 3800 0    47   ~ 0
+							MCU INTERFACE\nPULLDOWN SWITCH FOR RESET
+Wire Notes Line
+	5000 3850 600  3850
+Text Notes 6600 1700 0    47   ~ 0
+POWER CIRCUIT\n
+Wire Notes Line
+	5250 1750 8050 1750
+Text Notes 5150 2800 0    47   ~ 0
+SENSOR (???) CONNECTIONS\n
+$Comp
+L ElectricKettle-rescue:Led_Small D?
+U 1 1 5A154330
+P 5700 1150
+F 0 "D?" H 5550 1100 50  0000 L CNN
+F 1 "PWR_LED" H 5600 1250 39  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 5700 1150 50  0001 C CNN
+F 3 "" V 5700 1150 50  0000 C CNN
+	1    5700 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ElectricKettle-rescue:R R?
+U 1 1 5A154609
+P 5950 950
+F 0 "R?" V 6030 950 50  0000 C CNN
+F 1 "1k" V 5950 950 50  0000 C CNN
+F 2 "w_pth_resistors:RC03" V 5880 950 50  0001 C CNN
+F 3 "" H 5950 950 50  0000 C CNN
+	1    5950 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 1050 5700 950 
+Wire Wire Line
+	5700 950  5800 950 
+Wire Wire Line
+	5700 1250 5700 1350
+$Comp
+L ElectricKettle-rescue:CONN_01X06 P?
+U 1 1 5A2264A8
+P 7850 2550
+F 0 "P?" H 7850 2900 50  0000 C CNN
+F 1 "FT232_MODULE" V 7950 2550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch1.27mm" H 7850 2550 50  0001 C CNN
+F 3 "" H 7850 2550 50  0000 C CNN
+	1    7850 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 7650 2300 0    47   Output ~ 0
+DTR
+Text GLabel 7650 2500 0    47   Output ~ 0
+RX
+Text GLabel 7650 2400 0    47   Input ~ 0
+TX
+Text GLabel 7650 2600 0    47   UnSpc ~ 0
+VCC
+Text GLabel 7650 2700 0    47   Input ~ 0
+CTS
+Text GLabel 7650 2800 0    47   UnSpc ~ 0
+GND
+Text GLabel 5800 2000 0    47   Output Italic 0
+MISO
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5A22910C
+P 7350 2600
+F 0 "#PWR?" H 7350 2350 50  0001 C CNN
+F 1 "GND" H 7350 2450 50  0000 C CNN
+F 2 "" H 7350 2600 50  0000 C CNN
+F 3 "" H 7350 2600 50  0000 C CNN
+	1    7350 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7300 2550 0    47   UnSpc ~ 0
+GND
+Wire Wire Line
+	7300 2550 7350 2550
+Wire Wire Line
+	7350 2550 7350 2600
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5A2292D9
+P 7350 2300
+F 0 "#PWR?" H 7350 2150 50  0001 C CNN
+F 1 "+5V" H 7350 2440 50  0000 C CNN
+F 2 "" H 7350 2300 50  0000 C CNN
+F 3 "" H 7350 2300 50  0000 C CNN
+	1    7350 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 7300 2350 0    47   UnSpc ~ 0
+VCC
+Wire Wire Line
+	7300 2350 7350 2350
+Wire Wire Line
+	7350 2350 7350 2300
+Text GLabel 7600 2000 0    47   Input ~ 0
+DTR
+Text GLabel 7900 2000 2    47   Input ~ 0
+~RESET
+$Comp
+L ElectricKettle-rescue:C_Small C?
+U 1 1 5A22A9C7
+P 7750 2000
+F 0 "C?" V 7650 1850 50  0000 L CNN
+F 1 "100n" V 7850 1800 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 7750 2000 50  0001 C CNN
+F 3 "" H 7750 2000 50  0000 C CNN
+	1    7750 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 2000 7900 2000
+Wire Wire Line
+	7650 2000 7600 2000
+Text GLabel 6900 2200 0    47   Input ~ 0
+CTS
+$Comp
+L ElectricKettle-rescue:R R?
+U 1 1 5A22DEFA
+P 6950 2400
+F 0 "R?" V 7030 2400 50  0000 C CNN
+F 1 "100k" V 6950 2400 50  0000 C CNN
+F 2 "w_pth_resistors:RC03" V 6880 2400 50  0001 C CNN
+F 3 "" H 6950 2400 50  0000 C CNN
+	1    6950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2200 6950 2200
+Wire Wire Line
+	6950 2200 6950 2250
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5A22E649
+P 6950 2550
+F 0 "#PWR?" H 6950 2300 50  0001 C CNN
+F 1 "GND" H 6950 2400 50  0000 C CNN
+F 2 "" H 6950 2550 50  0000 C CNN
+F 3 "" H 6950 2550 50  0000 C CNN
+	1    6950 2550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8200 1800 8200 3050
+Wire Notes Line
+	6650 1800 6650 3050
+Wire Notes Line
+	6650 1800 8200 1800
+Wire Notes Line
+	6650 3050 8200 3050
+Text Notes 6950 3000 0    47   Italic 0
+FT232 Serial Connections
+$Comp
+L ElectricKettle-rescue:LM7805CT U?
+U 1 1 5A24C7DD
+P 6850 1000
+F 0 "U?" H 6650 1200 50  0000 C CNN
+F 1 "LM7805CT" H 6850 1200 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 6850 1100 50  0001 C CIN
+F 3 "" H 6850 1000 50  0000 C CNN
+	1    6850 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:CONN_01X05 P?
+U 1 1 5A36EE2B
+P 6050 2200
+F 0 "P?" H 6050 2500 50  0000 C CNN
+F 1 "MAX6675_MODULE" V 6150 2200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch1.27mm" H 6050 2200 50  0001 C CNN
+F 3 "" H 6050 2200 50  0000 C CNN
+	1    6050 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2000 5850 2000
+Wire Wire Line
+	5800 2100 5850 2100
+Wire Wire Line
+	5750 2450 5750 2400
+Wire Wire Line
+	5750 2400 5850 2400
+Wire Notes Line
+	6600 2900 6600 1800
+Wire Notes Line
+	6600 1800 5050 1800
+Wire Notes Line
+	5050 1800 5050 2900
+Wire Notes Line
+	5050 2900 6600 2900
+$Comp
+L ElectricKettle-rescue:R R?
+U 1 1 5A37174A
+P 2150 1500
+F 0 "R?" V 2230 1500 50  0000 C CNN
+F 1 "10k" V 2150 1500 50  0000 C CNN
+F 2 "w_pth_resistors:RC03" V 2080 1500 50  0001 C CNN
+F 3 "" H 2150 1500 50  0000 C CNN
+	1    2150 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1500 1950 1500
+Wire Wire Line
+	1950 1500 1950 1350
+Wire Wire Line
+	2300 1350 1950 1350
+Wire Wire Line
+	2300 850  2300 900 
+Wire Wire Line
+	2250 3200 2250 3250
+Wire Wire Line
+	1150 1350 1300 1350
+Wire Wire Line
+	1000 1000 1050 1000
+Wire Wire Line
+	1300 1000 1400 1000
+Wire Wire Line
+	2300 900  2300 1200
+Wire Wire Line
+	2300 1200 2350 1200
+Wire Wire Line
+	2300 1200 2300 1350
+Wire Wire Line
+	1500 2450 1650 2450
+Wire Wire Line
+	1500 2450 1500 2550
+Wire Wire Line
+	1500 2850 1500 2900
+Wire Wire Line
+	6150 950  6350 950 
+Wire Wire Line
+	6350 950  6350 1000
+Wire Wire Line
+	6350 950  6450 950 
+Wire Wire Line
+	6350 1350 6850 1350
+Wire Wire Line
+	6850 1350 6850 1400
+Wire Wire Line
+	6850 1350 7350 1350
+Wire Wire Line
+	7350 950  7350 1000
+Wire Wire Line
+	7350 1350 7600 1350
+Wire Notes Line
+	8050 1750 8050 600 
+Wire Notes Line
+	8050 600  5250 600 
+Wire Notes Line
+	5250 600  5250 1750
+$Comp
+L power:+12V #PWR?
+U 1 1 5ACDEF62
+P 6150 900
+F 0 "#PWR?" H 6150 750 50  0001 C CNN
+F 1 "+12V" H 6165 1073 50  0000 C CNN
+F 2 "" H 6150 900 50  0000 C CNN
+F 3 "" H 6150 900 50  0000 C CNN
+	1    6150 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1350 6350 1350
+$Comp
+L device:C C?
+U 1 1 5ACE4227
+P 7600 1150
+F 0 "C?" H 7650 1250 50  0000 L CNN
+F 1 "100n" H 7650 1050 50  0000 L CNN
+F 2 "" H 7638 1000 50  0000 C CNN
+F 3 "" H 7600 1150 50  0000 C CNN
+	1    7600 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1300 7600 1350
+Connection ~ 7600 1350
+Wire Wire Line
+	7600 1350 7900 1350
+Wire Wire Line
+	7600 1000 7600 950 
+Wire Wire Line
+	7600 950  7350 950 
+$Comp
+L maxim:DS1302 U?
+U 1 1 5ACFAF73
+P 9300 1450
+F 0 "U?" H 9300 1450 50  0000 C CNN
+F 1 "DS1302" H 9300 1550 50  0000 C CNN
+F 2 "" H 9300 1450 50  0000 C CNN
+F 3 "" H 9300 1450 50  0000 C CNN
+	1    9300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Crystal_Small Y?
+U 1 1 5ACFB13F
+P 8600 1750
+F 0 "Y?" V 8550 1550 50  0000 L CNN
+F 1 "Crystal_Small" V 8850 1550 50  0000 L CNN
+F 2 "" H 8600 1750 50  0000 C CNN
+F 3 "" H 8600 1750 50  0000 C CNN
+	1    8600 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 1650 8700 1650
+Wire Wire Line
+	8600 1850 8700 1850
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5ACFE02E
+P 9300 2050
+F 0 "#PWR?" H 9300 1800 50  0001 C CNN
+F 1 "GND" H 9305 1877 50  0000 C CNN
+F 2 "" H 9300 2050 50  0000 C CNN
+F 3 "" H 9300 2050 50  0000 C CNN
+	1    9300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5ACFE189
+P 9300 850
+F 0 "#PWR?" H 9300 700 50  0001 C CNN
+F 1 "+5V" H 9315 1023 50  0000 C CNN
+F 2 "" H 9300 850 50  0000 C CNN
+F 3 "" H 9300 850 50  0000 C CNN
+	1    9300 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 9900 1150 2    50   BiDi ~ 0
+RTC_DATA
+$Comp
+L w_device:BAT BAT?
+U 1 1 5ACFE4AE
+P 10000 1950
+F 0 "BAT?" H 10078 1996 50  0000 L CNN
+F 1 "BAT" H 10078 1905 50  0000 L CNN
+F 2 "" H 10000 1950 60  0000 C CNN
+F 3 "" H 10000 1950 60  0000 C CNN
+	1    10000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 1750 10000 1750
+Wire Wire Line
+	10000 1750 10000 1850
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5ACFFC42
+P 10000 2050
+F 0 "#PWR?" H 10000 1800 50  0001 C CNN
+F 1 "GND" H 10005 1877 50  0000 C CNN
+F 2 "" H 10000 2050 50  0000 C CNN
+F 3 "" H 10000 2050 50  0000 C CNN
+	1    10000 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 8700 1350 0    47   Input ~ 0
+~RTC_RST
+Text GLabel 8700 1150 0    50   Input ~ 0
+RTC_SCLK
+Text Notes 9050 2400 0    50   ~ 0
+RTC_MODULE\n
+Wire Notes Line
+	10400 2450 10400 600 
+Wire Notes Line
+	10400 600  8250 600 
+Wire Notes Line
+	8250 600  8250 2450
+Wire Notes Line
+	8250 2450 10400 2450
+Text GLabel 4250 1750 2    47   Input ~ 0
+HUM_IN
+$Comp
+L ElectricKettle-rescue:ATMEGA328-P IC?
+U 1 1 5A137ECC
+P 3250 2000
+F 0 "IC?" H 2500 3250 50  0000 L BNN
+F 1 "ATMEGA328-P" H 3650 600 50  0000 L BNN
+F 2 "Housings_DIP:DIP-28_W7.62mm_LongPads" H 3250 2000 50  0001 C CIN
+F 3 "" H 3250 2000 50  0000 C CNN
+	1    3250 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 3000 2    47   Output ~ 0
+VALV3
+Text GLabel 4250 3100 2    47   Output ~ 0
+VALV2
+Text GLabel 4250 3200 2    47   Output ~ 0
+VALV1
+Text GLabel 4250 900  2    50   Output ~ 0
+RTC_RST
+Text GLabel 4250 1000 2    50   BiDi ~ 0
+RTC_DATA
+Text GLabel 4250 1100 2    50   Output ~ 0
+RTC_SCLK
+Text GLabel 4250 1200 2    50   Output ~ 0
+MOSI
+Text GLabel 4250 1300 2    50   Input ~ 0
+MISO
+Text GLabel 4250 1400 2    50   Output ~ 0
+SCK
+Text GLabel 4250 2700 2    47   Output ~ 0
+FLUX
+$Comp
+L device:C C?
+U 1 1 5AD0E469
+P 1950 1750
+F 0 "C?" H 2065 1796 50  0000 L CNN
+F 1 "100n" H 2065 1705 50  0000 L CNN
+F 2 "" H 1988 1600 50  0000 C CNN
+F 3 "" H 1950 1750 50  0000 C CNN
+	1    1950 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1500 1950 1600
+Connection ~ 1950 1500
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5AD0FDEC
+P 1950 1900
+F 0 "#PWR?" H 1950 1650 50  0001 C CNN
+F 1 "GND" H 1955 1727 50  0000 C CNN
+F 2 "" H 1950 1900 50  0000 C CNN
+F 3 "" H 1950 1900 50  0000 C CNN
+	1    1950 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 2800 2    50   Output ~ 0
+RL1
+Text GLabel 4250 2900 2    50   Output ~ 0
+RL2
+Text GLabel 4250 1850 2    47   Input ~ 0
+OW_SENSOR1
+Text GLabel 4250 1950 2    47   Input ~ 0
+OW_SENSOR2
+Text GLabel 4250 2050 2    47   Input ~ 0
+OW_SENSOR3
+Text GLabel 4250 2150 2    47   BiDi ~ 0
+SDA
+Text GLabel 4250 2250 2    47   BiDi ~ 0
+SCL
+Text GLabel 1750 3450 2    50   Input ~ 0
+MOSI
+Text GLabel 1250 3350 0    50   Output ~ 0
+MISO
+Text GLabel 1250 3450 0    50   Input ~ 0
+SCK
+$Comp
+L conn:CONN_02X03 P?
+U 1 1 5AD16B7D
+P 1500 3450
+F 0 "P?" H 1500 3200 50  0000 C CNN
+F 1 "ISP_HEADER" H 1500 3674 50  0000 C CNN
+F 2 "" H 1500 2250 50  0000 C CNN
+F 3 "" H 1500 2250 50  0000 C CNN
+	1    1500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5AD16EDC
+P 1800 3600
+F 0 "#PWR?" H 1800 3350 50  0001 C CNN
+F 1 "GND" H 1805 3427 50  0000 C CNN
+F 2 "" H 1800 3600 50  0000 C CNN
+F 3 "" H 1800 3600 50  0000 C CNN
+	1    1800 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3550 1800 3550
+Wire Wire Line
+	1800 3550 1800 3600
+Text GLabel 1250 3550 0    37   Output ~ 0
+~RESET
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5AD18D6E
+P 1800 3300
+F 0 "#PWR?" H 1800 3150 50  0001 C CNN
+F 1 "+5V" H 1815 3473 50  0000 C CNN
+F 2 "" H 1800 3300 50  0000 C CNN
+F 3 "" H 1800 3300 50  0000 C CNN
+	1    1800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3350 1800 3350
+Wire Wire Line
+	1800 3350 1800 3300
+$Comp
+L conn:CONN_01X02 P?
+U 1 1 5AD1CC58
+P 9200 3950
+F 0 "P?" H 9150 3800 50  0000 L CNN
+F 1 "HUM_SENSOR" V 9300 3650 50  0000 L CNN
+F 2 "" H 9200 3950 50  0000 C CNN
+F 3 "" H 9200 3950 50  0000 C CNN
+	1    9200 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AD1CFF5
+P 8700 3550
+F 0 "R?" V 8493 3550 50  0000 C CNN
+F 1 "1k" V 8700 3550 50  0000 C CNN
+F 2 "" V 8630 3550 50  0000 C CNN
+F 3 "" H 8700 3550 50  0000 C CNN
+	1    8700 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AD1D0D8
+P 8450 4150
+F 0 "R?" V 8350 4150 50  0000 C CNN
+F 1 "1k" V 8450 4150 50  0000 C CNN
+F 2 "" V 8380 4150 50  0000 C CNN
+F 3 "" H 8450 4150 50  0000 C CNN
+	1    8450 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AD1DB8B
+P 8700 3950
+F 0 "R?" H 8630 3904 50  0000 R CNN
+F 1 "VAR" V 8700 4000 50  0000 R CNN
+F 2 "" V 8630 3950 50  0000 C CNN
+F 3 "" H 8700 3950 50  0000 C CNN
+	1    8700 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8700 3750 8700 3800
+Wire Wire Line
+	9000 3900 8900 3900
+Wire Wire Line
+	8900 3900 8900 3750
+Wire Wire Line
+	8900 3750 8700 3750
+Wire Wire Line
+	8600 4150 8700 4150
+Wire Wire Line
+	8900 4150 8900 4000
+Wire Wire Line
+	8900 4000 9000 4000
+Wire Wire Line
+	8700 4100 8700 4150
+Connection ~ 8700 4150
+Wire Wire Line
+	8700 4150 8900 4150
+$Comp
+L device:R R?
+U 1 1 5AD25C82
+P 8250 4350
+F 0 "R?" V 8350 4350 50  0000 C CNN
+F 1 "100k" V 8150 4350 50  0000 C CNN
+F 2 "" V 8180 4350 50  0000 C CNN
+F 3 "" H 8250 4350 50  0000 C CNN
+	1    8250 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8250 4200 8250 4150
+Wire Wire Line
+	8250 4150 8300 4150
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5AD2A779
+P 8250 4500
+F 0 "#PWR?" H 8250 4250 50  0001 C CNN
+F 1 "GND" H 8255 4327 50  0000 C CNN
+F 2 "" H 8250 4500 50  0000 C CNN
+F 3 "" H 8250 4500 50  0000 C CNN
+	1    8250 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 8200 4150 0    47   Output ~ 0
+HUM_IN
+Wire Wire Line
+	8200 4150 8250 4150
+Connection ~ 8250 4150
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5AD2DE94
+P 8700 3400
+F 0 "#PWR?" H 8700 3250 50  0001 C CNN
+F 1 "+5V" H 8715 3573 50  0000 C CNN
+F 2 "" H 8700 3400 50  0000 C CNN
+F 3 "" H 8700 3400 50  0000 C CNN
+	1    8700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L w_relay:RELAY_HJR-3FF_Z RLY?
+U 1 1 5AD31353
+P 1800 4550
+F 0 "RLY?" V 2150 4600 60  0000 R CNN
+F 1 "RELAY_HJR-3FF_Z" V 1747 4359 60  0001 R CNN
+F 2 "" H 1800 4550 60  0000 C CNN
+F 3 "" H 1800 4550 60  0000 C CNN
+	1    1800 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L transistors:BC546 Q?
+U 1 1 5AD31C6F
+P 1550 5050
+F 0 "Q?" H 1741 5096 50  0000 L CNN
+F 1 "BC546" H 1741 5005 50  0000 L CNN
+F 2 "TO-92" H 1741 5005 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1741 4959 50  0001 L CNN
+	1    1550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AD31E84
+P 1100 5050
+F 0 "R?" V 1000 5050 50  0000 C CNN
+F 1 "2k7" V 1100 5050 50  0000 C CNN
+F 2 "" V 1030 5050 50  0000 C CNN
+F 3 "" H 1100 5050 50  0000 C CNN
+	1    1100 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L device:D D?
+U 1 1 5AD3241D
+P 1450 4600
+F 0 "D?" V 1400 4450 50  0000 L CNN
+F 1 "D" V 1500 4450 50  0000 L CNN
+F 2 "" H 1450 4600 50  0000 C CNN
+F 3 "" H 1450 4600 50  0000 C CNN
+	1    1450 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 4350 1650 4300
+Wire Wire Line
+	1650 4300 1450 4300
+Wire Wire Line
+	1450 4300 1450 4450
+Connection ~ 1650 4300
+Wire Wire Line
+	1650 4300 1650 4250
+Wire Wire Line
+	1450 4750 1450 4800
+Wire Wire Line
+	1450 4800 1650 4800
+Wire Wire Line
+	1650 4800 1650 4750
+Wire Wire Line
+	1650 4800 1650 4850
+Connection ~ 1650 4800
+$Comp
+L conn:CONN_01X02 P?
+U 1 1 5AD40F91
+P 2300 4300
+F 0 "P?" H 2250 4150 50  0000 L CNN
+F 1 "EXT_V1" V 2400 4200 50  0000 L CNN
+F 2 "" H 2300 4300 50  0000 C CNN
+F 3 "" H 2300 4300 50  0000 C CNN
+	1    2300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:CONN_01X02 P?
+U 1 1 5AD41003
+P 2300 4750
+F 0 "P?" H 2250 4600 50  0000 L CNN
+F 1 "VALV_1" V 2400 4550 50  0000 L CNN
+F 2 "" H 2300 4750 50  0000 C CNN
+F 3 "" H 2300 4750 50  0000 C CNN
+	1    2300 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4350 2050 4350
+Wire Wire Line
+	2050 4350 2050 4700
+Wire Wire Line
+	2050 4700 2100 4700
+Wire Wire Line
+	2100 4250 1850 4250
+Wire Wire Line
+	1850 4250 1850 4350
+Wire Wire Line
+	2100 4800 1900 4800
+Wire Wire Line
+	1900 4800 1900 4750
+NoConn ~ 1950 4350
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5AD5A128
+P 1500 5400
+F 0 "#PWR?" H 1500 5150 50  0001 C CNN
+F 1 "GND" H 1505 5227 50  0000 C CNN
+F 2 "" H 1500 5400 50  0000 C CNN
+F 3 "" H 1500 5400 50  0000 C CNN
+	1    1500 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5AD5A44F
+P 1300 5200
+F 0 "C?" H 1100 5200 50  0000 L CNN
+F 1 "100n" H 1050 5100 50  0000 L CNN
+F 2 "" H 1300 5200 50  0000 C CNN
+F 3 "" H 1300 5200 50  0000 C CNN
+	1    1300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5100 1300 5050
+Wire Wire Line
+	1300 5050 1350 5050
+Wire Wire Line
+	1250 5050 1300 5050
+Connection ~ 1300 5050
+Wire Wire Line
+	1300 5300 1300 5350
+Wire Wire Line
+	1300 5350 1500 5350
+Wire Wire Line
+	1500 5350 1500 5400
+Wire Wire Line
+	1500 5350 1650 5350
+Wire Wire Line
+	1650 5350 1650 5250
+Connection ~ 1500 5350
+Text GLabel 950  5050 0    50   Input ~ 0
+VALV1
+$Comp
+L power:+12V #PWR?
+U 1 1 5AD6F969
+P 1650 4250
+F 0 "#PWR?" H 1650 4100 50  0001 C CNN
+F 1 "+12V" H 1665 4423 50  0000 C CNN
+F 2 "" H 1650 4250 50  0000 C CNN
+F 3 "" H 1650 4250 50  0000 C CNN
+	1    1650 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L w_relay:RELAY_HJR-3FF_Z RLY?
+U 1 1 5AD701A8
+P 3650 4550
+F 0 "RLY?" V 4000 4550 60  0000 R CNN
+F 1 "RELAY_HJR-3FF_Z" V 3597 4359 60  0001 R CNN
+F 2 "" H 3650 4550 60  0000 C CNN
+F 3 "" H 3650 4550 60  0000 C CNN
+	1    3650 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L transistors:BC546 Q?
+U 1 1 5AD701AE
+P 3400 5050
+F 0 "Q?" H 3591 5096 50  0000 L CNN
+F 1 "BC546" H 3591 5005 50  0000 L CNN
+F 2 "TO-92" H 3591 5005 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3591 4959 50  0001 L CNN
+	1    3400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AD701B4
+P 2950 5050
+F 0 "R?" V 2850 5050 50  0000 C CNN
+F 1 "2k7" V 2950 5050 50  0000 C CNN
+F 2 "" V 2880 5050 50  0000 C CNN
+F 3 "" H 2950 5050 50  0000 C CNN
+	1    2950 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L device:D D?
+U 1 1 5AD701BA
+P 3300 4600
+F 0 "D?" V 3250 4450 50  0000 L CNN
+F 1 "D" V 3350 4450 50  0000 L CNN
+F 2 "" H 3300 4600 50  0000 C CNN
+F 3 "" H 3300 4600 50  0000 C CNN
+	1    3300 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 4350 3500 4300
+Wire Wire Line
+	3500 4300 3300 4300
+Wire Wire Line
+	3300 4300 3300 4450
+Connection ~ 3500 4300
+Wire Wire Line
+	3500 4300 3500 4250
+Wire Wire Line
+	3300 4750 3300 4800
+Wire Wire Line
+	3300 4800 3500 4800
+Wire Wire Line
+	3500 4800 3500 4750
+Wire Wire Line
+	3500 4800 3500 4850
+Connection ~ 3500 4800
+$Comp
+L conn:CONN_01X02 P?
+U 1 1 5AD701CA
+P 4150 4300
+F 0 "P?" H 4100 4150 50  0000 L CNN
+F 1 "EXT_V2" V 4250 4200 50  0000 L CNN
+F 2 "" H 4150 4300 50  0000 C CNN
+F 3 "" H 4150 4300 50  0000 C CNN
+	1    4150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:CONN_01X02 P?
+U 1 1 5AD701D0
+P 4150 4750
+F 0 "P?" H 4100 4600 50  0000 L CNN
+F 1 "VALV_2" V 4250 4550 50  0000 L CNN
+F 2 "" H 4150 4750 50  0000 C CNN
+F 3 "" H 4150 4750 50  0000 C CNN
+	1    4150 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4350 3900 4350
+Wire Wire Line
+	3900 4350 3900 4700
+Wire Wire Line
+	3900 4700 3950 4700
+Wire Wire Line
+	3950 4250 3700 4250
+Wire Wire Line
+	3700 4250 3700 4350
+Wire Wire Line
+	3950 4800 3750 4800
+Wire Wire Line
+	3750 4800 3750 4750
+NoConn ~ 3800 4350
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5AD701DE
+P 3350 5400
+F 0 "#PWR?" H 3350 5150 50  0001 C CNN
+F 1 "GND" H 3355 5227 50  0000 C CNN
+F 2 "" H 3350 5400 50  0000 C CNN
+F 3 "" H 3350 5400 50  0000 C CNN
+	1    3350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5AD701E4
+P 3150 5200
+F 0 "C?" H 2950 5200 50  0000 L CNN
+F 1 "100n" H 2900 5100 50  0000 L CNN
+F 2 "" H 3150 5200 50  0000 C CNN
+F 3 "" H 3150 5200 50  0000 C CNN
+	1    3150 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5100 3150 5050
+Wire Wire Line
+	3150 5050 3200 5050
+Wire Wire Line
+	3100 5050 3150 5050
+Connection ~ 3150 5050
+Wire Wire Line
+	3150 5300 3150 5350
+Wire Wire Line
+	3150 5350 3350 5350
+Wire Wire Line
+	3350 5350 3350 5400
+Wire Wire Line
+	3350 5350 3500 5350
+Wire Wire Line
+	3500 5350 3500 5250
+Connection ~ 3350 5350
+Text GLabel 2800 5050 0    50   Input ~ 0
+VALV2
+$Comp
+L power:+12V #PWR?
+U 1 1 5AD701F5
+P 3500 4250
+F 0 "#PWR?" H 3500 4100 50  0001 C CNN
+F 1 "+12V" H 3515 4423 50  0000 C CNN
+F 2 "" H 3500 4250 50  0000 C CNN
+F 3 "" H 3500 4250 50  0000 C CNN
+	1    3500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L w_relay:RELAY_HJR-3FF_Z RLY?
+U 1 1 5AD76657
+P 5500 4550
+F 0 "RLY?" V 5850 4550 60  0000 R CNN
+F 1 "RELAY_HJR-3FF_Z" V 5447 4359 60  0001 R CNN
+F 2 "" H 5500 4550 60  0000 C CNN
+F 3 "" H 5500 4550 60  0000 C CNN
+	1    5500 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L transistors:BC546 Q?
+U 1 1 5AD7665D
+P 5250 5050
+F 0 "Q?" H 5441 5096 50  0000 L CNN
+F 1 "BC546" H 5441 5005 50  0000 L CNN
+F 2 "TO-92" H 5441 5005 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5441 4959 50  0001 L CNN
+	1    5250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AD76663
+P 4800 5050
+F 0 "R?" V 4700 5050 50  0000 C CNN
+F 1 "2k7" V 4800 5050 50  0000 C CNN
+F 2 "" V 4730 5050 50  0000 C CNN
+F 3 "" H 4800 5050 50  0000 C CNN
+	1    4800 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L device:D D?
+U 1 1 5AD76669
+P 5150 4600
+F 0 "D?" V 4950 4600 50  0000 L CNN
+F 1 "1N4001" H 5000 4500 50  0000 L CNN
+F 2 "" H 5150 4600 50  0000 C CNN
+F 3 "" H 5150 4600 50  0000 C CNN
+	1    5150 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 4350 5350 4300
+Wire Wire Line
+	5350 4300 5150 4300
+Wire Wire Line
+	5150 4300 5150 4450
+Connection ~ 5350 4300
+Wire Wire Line
+	5350 4300 5350 4250
+Wire Wire Line
+	5150 4750 5150 4800
+Wire Wire Line
+	5150 4800 5350 4800
+Wire Wire Line
+	5350 4800 5350 4750
+Wire Wire Line
+	5350 4800 5350 4850
+Connection ~ 5350 4800
+$Comp
+L conn:CONN_01X02 P?
+U 1 1 5AD76679
+P 6000 4300
+F 0 "P?" H 5950 4150 50  0000 L CNN
+F 1 "EXT_V3" V 6100 4200 50  0000 L CNN
+F 2 "" H 6000 4300 50  0000 C CNN
+F 3 "" H 6000 4300 50  0000 C CNN
+	1    6000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:CONN_01X02 P?
+U 1 1 5AD7667F
+P 6000 4750
+F 0 "P?" H 5950 4600 50  0000 L CNN
+F 1 "VALV_3" V 6100 4550 50  0000 L CNN
+F 2 "" H 6000 4750 50  0000 C CNN
+F 3 "" H 6000 4750 50  0000 C CNN
+	1    6000 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4350 5750 4350
+Wire Wire Line
+	5750 4350 5750 4700
+Wire Wire Line
+	5750 4700 5800 4700
+Wire Wire Line
+	5800 4250 5550 4250
+Wire Wire Line
+	5550 4250 5550 4350
+Wire Wire Line
+	5800 4800 5600 4800
+Wire Wire Line
+	5600 4800 5600 4750
+NoConn ~ 5650 4350
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5AD7668D
+P 5200 5400
+F 0 "#PWR?" H 5200 5150 50  0001 C CNN
+F 1 "GND" H 5205 5227 50  0000 C CNN
+F 2 "" H 5200 5400 50  0000 C CNN
+F 3 "" H 5200 5400 50  0000 C CNN
+	1    5200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5AD76693
+P 5000 5200
+F 0 "C?" H 4800 5200 50  0000 L CNN
+F 1 "100n" H 4750 5100 50  0000 L CNN
+F 2 "" H 5000 5200 50  0000 C CNN
+F 3 "" H 5000 5200 50  0000 C CNN
+	1    5000 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5100 5000 5050
+Wire Wire Line
+	5000 5050 5050 5050
+Wire Wire Line
+	4950 5050 5000 5050
+Connection ~ 5000 5050
+Wire Wire Line
+	5000 5300 5000 5350
+Wire Wire Line
+	5000 5350 5200 5350
+Wire Wire Line
+	5200 5350 5200 5400
+Wire Wire Line
+	5200 5350 5350 5350
+Wire Wire Line
+	5350 5350 5350 5250
+Connection ~ 5200 5350
+Text GLabel 4650 5050 0    50   Input ~ 0
+VALV3
+$Comp
+L power:+12V #PWR?
+U 1 1 5AD766A4
+P 5350 4250
+F 0 "#PWR?" H 5350 4100 50  0001 C CNN
+F 1 "+12V" H 5365 4423 50  0000 C CNN
+F 2 "" H 5350 4250 50  0000 C CNN
+F 3 "" H 5350 4250 50  0000 C CNN
+	1    5350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L w_relay:RELAY_HJR-3FF_Z RLY?
+U 1 1 5AE1CF68
+P 1800 6200
+F 0 "RLY?" V 2150 6200 60  0000 R CNN
+F 1 "RELAY_HJR-3FF_Z" V 1747 6009 60  0001 R CNN
+F 2 "" H 1800 6200 60  0000 C CNN
+F 3 "" H 1800 6200 60  0000 C CNN
+	1    1800 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L transistors:BC546 Q?
+U 1 1 5AE1CF6E
+P 1550 6700
+F 0 "Q?" H 1741 6746 50  0000 L CNN
+F 1 "BC546" H 1741 6655 50  0000 L CNN
+F 2 "TO-92" H 1741 6655 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1741 6609 50  0001 L CNN
+	1    1550 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AE1CF74
+P 1100 6700
+F 0 "R?" V 1000 6700 50  0000 C CNN
+F 1 "2k7" V 1100 6700 50  0000 C CNN
+F 2 "" V 1030 6700 50  0000 C CNN
+F 3 "" H 1100 6700 50  0000 C CNN
+	1    1100 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L device:D D?
+U 1 1 5AE1CF7A
+P 1450 6250
+F 0 "D?" V 1400 6100 50  0000 L CNN
+F 1 "D" V 1550 5850 50  0001 L CNN
+F 2 "" H 1450 6250 50  0000 C CNN
+F 3 "" H 1450 6250 50  0000 C CNN
+	1    1450 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 6000 1650 5950
+Wire Wire Line
+	1650 5950 1450 5950
+Wire Wire Line
+	1450 5950 1450 6100
+Connection ~ 1650 5950
+Wire Wire Line
+	1650 5950 1650 5900
+Wire Wire Line
+	1450 6400 1450 6450
+Wire Wire Line
+	1450 6450 1650 6450
+Wire Wire Line
+	1650 6450 1650 6400
+Wire Wire Line
+	1650 6450 1650 6500
+Connection ~ 1650 6450
+$Comp
+L conn:CONN_01X02 P?
+U 1 1 5AE1CF8A
+P 2300 5950
+F 0 "P?" H 2250 5800 50  0000 L CNN
+F 1 "EXT_V3" V 2400 5850 50  0000 L CNN
+F 2 "" H 2300 5950 50  0000 C CNN
+F 3 "" H 2300 5950 50  0000 C CNN
+	1    2300 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:CONN_01X02 P?
+U 1 1 5AE1CF90
+P 2300 6400
+F 0 "P?" H 2250 6250 50  0000 L CNN
+F 1 "VALV_3" V 2400 6200 50  0000 L CNN
+F 2 "" H 2300 6400 50  0000 C CNN
+F 3 "" H 2300 6400 50  0000 C CNN
+	1    2300 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6000 2050 6000
+Wire Wire Line
+	2050 6000 2050 6350
+Wire Wire Line
+	2050 6350 2100 6350
+Wire Wire Line
+	2100 5900 1850 5900
+Wire Wire Line
+	1850 5900 1850 6000
+Wire Wire Line
+	2100 6450 1900 6450
+Wire Wire Line
+	1900 6450 1900 6400
+NoConn ~ 1950 6000
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5AE1CF9E
+P 1500 7050
+F 0 "#PWR?" H 1500 6800 50  0001 C CNN
+F 1 "GND" H 1505 6877 50  0000 C CNN
+F 2 "" H 1500 7050 50  0000 C CNN
+F 3 "" H 1500 7050 50  0000 C CNN
+	1    1500 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5AE1CFA4
+P 1300 6850
+F 0 "C?" H 1100 6850 50  0000 L CNN
+F 1 "100n" H 1050 6750 50  0000 L CNN
+F 2 "" H 1300 6850 50  0000 C CNN
+F 3 "" H 1300 6850 50  0000 C CNN
+	1    1300 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6750 1300 6700
+Wire Wire Line
+	1300 6700 1350 6700
+Wire Wire Line
+	1250 6700 1300 6700
+Connection ~ 1300 6700
+Wire Wire Line
+	1300 6950 1300 7000
+Wire Wire Line
+	1300 7000 1500 7000
+Wire Wire Line
+	1500 7000 1500 7050
+Wire Wire Line
+	1500 7000 1650 7000
+Wire Wire Line
+	1650 7000 1650 6900
+Connection ~ 1500 7000
+Text GLabel 950  6700 0    50   Input ~ 0
+RL1
+$Comp
+L power:+12V #PWR?
+U 1 1 5AE1CFB5
+P 1650 5900
+F 0 "#PWR?" H 1650 5750 50  0001 C CNN
+F 1 "+12V" H 1665 6073 50  0000 C CNN
+F 2 "" H 1650 5900 50  0000 C CNN
+F 3 "" H 1650 5900 50  0000 C CNN
+	1    1650 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L w_relay:RELAY_HJR-3FF_Z RLY?
+U 1 1 5AE270DF
+P 5450 6200
+F 0 "RLY?" V 5800 6200 60  0000 R CNN
+F 1 "RELAY_HJR-3FF_Z" V 5397 6009 60  0001 R CNN
+F 2 "" H 5450 6200 60  0000 C CNN
+F 3 "" H 5450 6200 60  0000 C CNN
+	1    5450 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L transistors:BC546 Q?
+U 1 1 5AE270E5
+P 5200 6700
+F 0 "Q?" H 5391 6746 50  0000 L CNN
+F 1 "BC546" H 5391 6655 50  0000 L CNN
+F 2 "TO-92" H 5391 6655 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5391 6609 50  0001 L CNN
+	1    5200 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AE270EB
+P 4750 6700
+F 0 "R?" V 4650 6700 50  0000 C CNN
+F 1 "2k7" V 4750 6700 50  0000 C CNN
+F 2 "" V 4680 6700 50  0000 C CNN
+F 3 "" H 4750 6700 50  0000 C CNN
+	1    4750 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L device:D D?
+U 1 1 5AE270F1
+P 5100 6250
+F 0 "D?" V 5050 6100 50  0000 L CNN
+F 1 "D" V 5150 6100 50  0000 L CNN
+F 2 "" H 5100 6250 50  0000 C CNN
+F 3 "" H 5100 6250 50  0000 C CNN
+	1    5100 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 6000 5300 5950
+Wire Wire Line
+	5300 5950 5100 5950
+Wire Wire Line
+	5100 5950 5100 6100
+Connection ~ 5300 5950
+Wire Wire Line
+	5300 5950 5300 5900
+Wire Wire Line
+	5100 6400 5100 6450
+Wire Wire Line
+	5100 6450 5300 6450
+Wire Wire Line
+	5300 6450 5300 6400
+Wire Wire Line
+	5300 6450 5300 6500
+Connection ~ 5300 6450
+$Comp
+L conn:CONN_01X02 P?
+U 1 1 5AE27101
+P 5950 5950
+F 0 "P?" H 5900 5800 50  0000 L CNN
+F 1 "EXT_V3" V 6050 5850 50  0000 L CNN
+F 2 "" H 5950 5950 50  0000 C CNN
+F 3 "" H 5950 5950 50  0000 C CNN
+	1    5950 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:CONN_01X02 P?
+U 1 1 5AE27107
+P 5950 6400
+F 0 "P?" H 5900 6250 50  0000 L CNN
+F 1 "VALV_3" V 6050 6200 50  0000 L CNN
+F 2 "" H 5950 6400 50  0000 C CNN
+F 3 "" H 5950 6400 50  0000 C CNN
+	1    5950 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 6000 5700 6000
+Wire Wire Line
+	5700 6000 5700 6350
+Wire Wire Line
+	5700 6350 5750 6350
+Wire Wire Line
+	5750 5900 5500 5900
+Wire Wire Line
+	5500 5900 5500 6000
+Wire Wire Line
+	5750 6450 5550 6450
+Wire Wire Line
+	5550 6450 5550 6400
+NoConn ~ 5600 6000
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5AE27115
+P 5150 7050
+F 0 "#PWR?" H 5150 6800 50  0001 C CNN
+F 1 "GND" H 5155 6877 50  0000 C CNN
+F 2 "" H 5150 7050 50  0000 C CNN
+F 3 "" H 5150 7050 50  0000 C CNN
+	1    5150 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5AE2711B
+P 4950 6850
+F 0 "C?" H 4750 6850 50  0000 L CNN
+F 1 "100n" H 4700 6750 50  0000 L CNN
+F 2 "" H 4950 6850 50  0000 C CNN
+F 3 "" H 4950 6850 50  0000 C CNN
+	1    4950 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 6750 4950 6700
+Wire Wire Line
+	4950 6700 5000 6700
+Wire Wire Line
+	4900 6700 4950 6700
+Connection ~ 4950 6700
+Wire Wire Line
+	4950 6950 4950 7000
+Wire Wire Line
+	4950 7000 5150 7000
+Wire Wire Line
+	5150 7000 5150 7050
+Wire Wire Line
+	5150 7000 5300 7000
+Wire Wire Line
+	5300 7000 5300 6900
+Connection ~ 5150 7000
+Text GLabel 4600 6700 0    50   Input ~ 0
+RL2
+$Comp
+L power:+12V #PWR?
+U 1 1 5AE2712C
+P 5300 5900
+F 0 "#PWR?" H 5300 5750 50  0001 C CNN
+F 1 "+12V" H 5315 6073 50  0000 C CNN
+F 2 "" H 5300 5900 50  0000 C CNN
+F 3 "" H 5300 5900 50  0000 C CNN
+	1    5300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R_Small R?
+U 1 1 5AE342FF
+P 1200 6100
+F 0 "R?" H 1050 6150 50  0000 L CNN
+F 1 "2k7" H 1000 6050 50  0000 L CNN
+F 2 "" H 1200 6100 50  0000 C CNN
+F 3 "" H 1200 6100 50  0000 C CNN
+	1    1200 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Led_Small D?
+U 1 1 5AE344FB
+P 1200 6300
+F 0 "D?" V 1200 6500 50  0000 R CNN
+F 1 "3mm" V 1100 6500 50  0000 R CNN
+F 2 "" V 1200 6300 50  0000 C CNN
+F 3 "" V 1200 6300 50  0000 C CNN
+	1    1200 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 6000 1200 5950
+Wire Wire Line
+	1200 5950 1450 5950
+Connection ~ 1450 5950
+Wire Wire Line
+	1200 6400 1200 6450
+Wire Wire Line
+	1200 6450 1450 6450
+Connection ~ 1450 6450
+$Comp
+L device:R_Small R?
+U 1 1 5AE4E527
+P 4850 6100
+F 0 "R?" H 4700 6150 50  0000 L CNN
+F 1 "2k7" H 4650 6050 50  0000 L CNN
+F 2 "" H 4850 6100 50  0000 C CNN
+F 3 "" H 4850 6100 50  0000 C CNN
+	1    4850 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Led_Small D?
+U 1 1 5AE4E52D
+P 4850 6300
+F 0 "D?" V 4850 6500 50  0000 R CNN
+F 1 "3mm" V 4750 6500 50  0000 R CNN
+F 2 "" V 4850 6300 50  0000 C CNN
+F 3 "" V 4850 6300 50  0000 C CNN
+	1    4850 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 6000 4850 5950
+Wire Wire Line
+	4850 5950 5100 5950
+Wire Wire Line
+	4850 6400 4850 6450
+Wire Wire Line
+	4850 6450 5100 6450
+Connection ~ 5100 5950
+Connection ~ 5100 6450
+$Comp
+L device:R_Small R?
+U 1 1 5AE5BF38
+P 1200 4450
+F 0 "R?" H 1050 4500 50  0000 L CNN
+F 1 "2k7" H 1000 4400 50  0000 L CNN
+F 2 "" H 1200 4450 50  0000 C CNN
+F 3 "" H 1200 4450 50  0000 C CNN
+	1    1200 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Led_Small D?
+U 1 1 5AE5BF3E
+P 1200 4650
+F 0 "D?" V 1200 4850 50  0000 R CNN
+F 1 "3mm" V 1100 4900 50  0000 R CNN
+F 2 "" V 1200 4650 50  0000 C CNN
+F 3 "" V 1200 4650 50  0000 C CNN
+	1    1200 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 4350 1200 4300
+Wire Wire Line
+	1200 4300 1450 4300
+Wire Wire Line
+	1200 4750 1200 4800
+Wire Wire Line
+	1200 4800 1450 4800
+Connection ~ 1450 4300
+Connection ~ 1450 4800
+$Comp
+L device:R_Small R?
+U 1 1 5AE69FA1
+P 3050 4450
+F 0 "R?" H 2900 4500 50  0000 L CNN
+F 1 "2k7" H 2850 4400 50  0000 L CNN
+F 2 "" H 3050 4450 50  0000 C CNN
+F 3 "" H 3050 4450 50  0000 C CNN
+	1    3050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Led_Small D?
+U 1 1 5AE69FA7
+P 3050 4650
+F 0 "D?" V 3050 4850 50  0000 R CNN
+F 1 "3mm" V 2950 4850 50  0000 R CNN
+F 2 "" V 3050 4650 50  0000 C CNN
+F 3 "" V 3050 4650 50  0000 C CNN
+	1    3050 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 4350 3050 4300
+Wire Wire Line
+	3050 4300 3300 4300
+Wire Wire Line
+	3050 4750 3050 4800
+Wire Wire Line
+	3050 4800 3300 4800
+Connection ~ 3300 4300
+Connection ~ 3300 4800
+$Comp
+L device:R_Small R?
+U 1 1 5AE78813
+P 4900 4450
+F 0 "R?" H 4750 4500 50  0000 L CNN
+F 1 "2k7" H 4700 4400 50  0000 L CNN
+F 2 "" H 4900 4450 50  0000 C CNN
+F 3 "" H 4900 4450 50  0000 C CNN
+	1    4900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Led_Small D?
+U 1 1 5AE78819
+P 4900 4650
+F 0 "D?" V 4900 4850 50  0000 R CNN
+F 1 "3mm" V 4800 4850 50  0000 R CNN
+F 2 "" V 4900 4650 50  0000 C CNN
+F 3 "" V 4900 4650 50  0000 C CNN
+	1    4900 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 4350 4900 4300
+Wire Wire Line
+	4900 4300 5150 4300
+Wire Wire Line
+	4900 4750 4900 4800
+Wire Wire Line
+	4900 4800 5150 4800
+Connection ~ 5150 4300
+Connection ~ 5150 4800
+Wire Notes Line
+	6250 7350 600  7350
+Wire Notes Line
+	600  7350 600  3950
+Wire Notes Line
+	600  3950 6250 3950
+Wire Notes Line
+	6250 3950 6250 7350
+Text Notes 2250 7200 0    79   ~ 0
+     RELAY ACTUATOR MODULES\n3 FOR WATER VALVES AND 2 EXTRA\n
+$Comp
+L conn:CONN_01X03 P?
+U 1 1 5AEE7996
+P 7550 4000
+F 0 "P?" H 7500 4200 50  0000 L CNN
+F 1 "FLUX_SENSOR" V 7650 3800 50  0000 L CNN
+F 2 "" H 7550 4000 50  0000 C CNN
+F 3 "" H 7550 4000 50  0000 C CNN
+	1    7550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R_Small R?
+U 1 1 5AEE81C6
+P 7200 3650
+F 0 "R?" H 7050 3700 50  0000 L CNN
+F 1 "2k7" H 7000 3600 50  0000 L CNN
+F 2 "" H 7200 3650 50  0000 C CNN
+F 3 "" H 7200 3650 50  0000 C CNN
+	1    7200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Led_Small D?
+U 1 1 5AEE81CC
+P 7200 3850
+F 0 "D?" V 7200 4050 50  0000 R CNN
+F 1 "3mm" V 7100 4050 50  0000 R CNN
+F 2 "" V 7200 3850 50  0000 C CNN
+F 3 "" V 7200 3850 50  0000 C CNN
+	1    7200 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AF06579
+P 6800 3750
+F 0 "R?" H 6870 3796 50  0000 L CNN
+F 1 "R" H 6870 3705 50  0000 L CNN
+F 2 "" V 6730 3750 50  0000 C CNN
+F 3 "" H 6800 3750 50  0000 C CNN
+	1    6800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AF06655
+P 6800 4200
+F 0 "R?" H 6870 4246 50  0000 L CNN
+F 1 "R" H 6870 4155 50  0000 L CNN
+F 2 "" V 6730 4200 50  0000 C CNN
+F 3 "" H 6800 4200 50  0000 C CNN
+	1    6800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3900 6800 4000
+Wire Wire Line
+	7200 3950 7200 4000
+Wire Wire Line
+	7200 4000 6800 4000
+Connection ~ 6800 4000
+Wire Wire Line
+	6800 4000 6800 4050
+Wire Wire Line
+	7200 4000 7350 4000
+Connection ~ 7200 4000
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5AF8125F
+P 7200 3450
+F 0 "#PWR?" H 7200 3300 50  0001 C CNN
+F 1 "+5V" H 7215 3623 50  0000 C CNN
+F 2 "" H 7200 3450 50  0000 C CNN
+F 3 "" H 7200 3450 50  0000 C CNN
+	1    7200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3450 7200 3500
+Wire Wire Line
+	7200 3500 7300 3500
+Wire Wire Line
+	7300 3500 7300 3900
+Wire Wire Line
+	7300 3900 7350 3900
+Connection ~ 7200 3500
+Wire Wire Line
+	7200 3500 7200 3550
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5AFB0809
+P 7300 4450
+F 0 "#PWR?" H 7300 4200 50  0001 C CNN
+F 1 "GND" H 7305 4277 50  0000 C CNN
+F 2 "" H 7300 4450 50  0000 C CNN
+F 3 "" H 7300 4450 50  0000 C CNN
+	1    7300 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4450 7300 4400
+Wire Wire Line
+	7300 4100 7350 4100
+Wire Wire Line
+	6800 3600 6800 3500
+Wire Wire Line
+	6800 3500 7200 3500
+Wire Wire Line
+	6800 4350 6800 4400
+Wire Wire Line
+	6800 4400 7300 4400
+Connection ~ 7300 4400
+Wire Wire Line
+	7300 4400 7300 4100
+Text GLabel 6700 4000 0    50   Output ~ 0
+FLUX
+Wire Wire Line
+	6700 4000 6800 4000
+Wire Wire Line
+	8700 3700 8700 3750
+Connection ~ 8700 3750
+$Comp
+L conn:CONN_01X03 P?
+U 1 1 5B09AD7D
+P 7150 5200
+F 0 "P?" H 7050 4950 50  0000 L CNN
+F 1 "ONE_WIRE_SENSOR_1" V 7250 4800 50  0000 L CNN
+F 2 "" H 7150 5200 50  0000 C CNN
+F 3 "" H 7150 5200 50  0000 C CNN
+	1    7150 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5B09B13B
+P 6900 5050
+F 0 "#PWR?" H 6900 4900 50  0001 C CNN
+F 1 "+5V" H 6915 5223 50  0000 C CNN
+F 2 "" H 6900 5050 50  0000 C CNN
+F 3 "" H 6900 5050 50  0000 C CNN
+	1    6900 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 5050 6900 5100
+Wire Wire Line
+	6900 5100 6950 5100
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5B0ABC22
+P 6900 5350
+F 0 "#PWR?" H 6900 5100 50  0001 C CNN
+F 1 "GND" H 6905 5177 50  0000 C CNN
+F 2 "" H 6900 5350 50  0000 C CNN
+F 3 "" H 6900 5350 50  0000 C CNN
+	1    6900 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 5350 6900 5300
+Wire Wire Line
+	6900 5300 6950 5300
+Text GLabel 6950 5200 0    47   BiDi ~ 0
+OW_SENSOR1
+Text GLabel 7900 5200 0    47   BiDi ~ 0
+OW_SENSOR2
+Text GLabel 8900 5200 0    47   Input ~ 0
+OW_SENSOR3
+$Comp
+L conn:CONN_01X03 P?
+U 1 1 5B0DF075
+P 8100 5200
+F 0 "P?" H 8000 5000 50  0000 L CNN
+F 1 "ONE_WIRE_SENSOR_2" V 8250 4800 50  0000 L CNN
+F 2 "" H 8100 5200 50  0000 C CNN
+F 3 "" H 8100 5200 50  0000 C CNN
+	1    8100 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5B0DF07B
+P 7850 5050
+F 0 "#PWR?" H 7850 4900 50  0001 C CNN
+F 1 "+5V" H 7865 5223 50  0000 C CNN
+F 2 "" H 7850 5050 50  0000 C CNN
+F 3 "" H 7850 5050 50  0000 C CNN
+	1    7850 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5050 7850 5100
+Wire Wire Line
+	7850 5100 7900 5100
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5B0DF083
+P 7850 5350
+F 0 "#PWR?" H 7850 5100 50  0001 C CNN
+F 1 "GND" H 7855 5177 50  0000 C CNN
+F 2 "" H 7850 5350 50  0000 C CNN
+F 3 "" H 7850 5350 50  0000 C CNN
+	1    7850 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5350 7850 5300
+Wire Wire Line
+	7850 5300 7900 5300
+$Comp
+L conn:CONN_01X03 P?
+U 1 1 5B0F0442
+P 9100 5200
+F 0 "P?" H 9000 5000 50  0000 L CNN
+F 1 "ONE_WIRE_SENSOR_3" V 9250 4800 50  0000 L CNN
+F 2 "" H 9100 5200 50  0000 C CNN
+F 3 "" H 9100 5200 50  0000 C CNN
+	1    9100 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ElectricKettle-rescue:+5V #PWR?
+U 1 1 5B0F0448
+P 8850 5050
+F 0 "#PWR?" H 8850 4900 50  0001 C CNN
+F 1 "+5V" H 8865 5223 50  0000 C CNN
+F 2 "" H 8850 5050 50  0000 C CNN
+F 3 "" H 8850 5050 50  0000 C CNN
+	1    8850 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5050 8850 5100
+Wire Wire Line
+	8850 5100 8900 5100
+$Comp
+L ElectricKettle-rescue:GND #PWR?
+U 1 1 5B0F0450
+P 8850 5350
+F 0 "#PWR?" H 8850 5100 50  0001 C CNN
+F 1 "GND" H 8855 5177 50  0000 C CNN
+F 2 "" H 8850 5350 50  0000 C CNN
+F 3 "" H 8850 5350 50  0000 C CNN
+	1    8850 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5350 8850 5300
+Wire Wire Line
+	8850 5300 8900 5300
+Wire Notes Line
+	9400 3150 6350 3150
+Wire Notes Line
+	6350 5850 9400 5850
+Wire Notes Line
+	9400 3150 9400 5850
+Wire Notes Line
+	6350 3150 6350 5850
+Text Notes 6650 5800 0    50   ~ 0
+                        SENSOR MODULES\nWATER FLUX, SOIL HUMIDITY AND 3 EXTRA ONE WIRE SENSORS
+$EndSCHEMATC
