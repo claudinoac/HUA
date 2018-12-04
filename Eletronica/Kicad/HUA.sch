@@ -34,2150 +34,1952 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "HORTAS URBANAS AUTOMATIZADAS"
+Date "2018-12-04"
+Rev "1"
+Comp "HUA"
+Comment1 "Projected and Designed by Alisson Claudino"
+Comment2 "All resistors are 1/8W"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 4250 2350 2    39   Input ~ 0
-~RESET
 $Comp
-L ElectricKettle-rescue:+5V #PWR?
+L HUA-rescue:+5V-ElectricKettle-rescue #PWR01
 U 1 1 5A1382EB
-P 2300 850
-F 0 "#PWR?" H 2300 700 50  0001 C CNN
-F 1 "+5V" H 2300 990 50  0000 C CNN
-F 2 "" H 2300 850 50  0000 C CNN
-F 3 "" H 2300 850 50  0000 C CNN
-	1    2300 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5A1385CF
-P 2250 3250
-F 0 "#PWR?" H 2250 3000 50  0001 C CNN
-F 1 "GND" H 2250 3100 50  0000 C CNN
-F 2 "" H 2250 3250 50  0000 C CNN
-F 3 "" H 2250 3250 50  0000 C CNN
-	1    2250 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L ElectricKettle-rescue:Crystal_Small Y?
-U 1 1 5A1387D3
-P 1150 1000
-F 0 "Y?" H 1150 1100 50  0000 C CNN
-F 1 "16000" H 1150 900 50  0000 C CNN
-F 2 "w_pth_resistors:RC03" H 1150 1000 50  0001 C CNN
-F 3 "" H 1150 1000 50  0000 C CNN
-	1    1150 1000
-	-1   0    0    1   
-$EndComp
-Text GLabel 4250 1500 2    47   UnSpc ~ 0
-XTAL1
-Text GLabel 4250 1600 2    47   UnSpc ~ 0
-XTAL2
-$Comp
-L ElectricKettle-rescue:C_Small C?
-U 1 1 5A138B55
-P 1300 1200
-F 0 "C?" H 1310 1270 50  0000 L CNN
-F 1 "100p" H 1050 1150 50  0000 L CNN
-F 2 "Capacitors_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 1300 1200 50  0001 C CNN
-F 3 "" H 1300 1200 50  0000 C CNN
-	1    1300 1200
+P 950 2300
+F 0 "#PWR01" H 950 2150 50  0001 C CNN
+F 1 "+5V" H 950 2440 50  0000 C CNN
+F 2 "" H 950 2300 50  0000 C CNN
+F 3 "" H 950 2300 50  0000 C CNN
+	1    950  2300
 	-1   0    0    1   
 $EndComp
 $Comp
-L ElectricKettle-rescue:C_Small C?
-U 1 1 5A138BAC
-P 1000 1200
-F 0 "C?" H 1010 1270 50  0000 L CNN
-F 1 "100p" H 1010 1120 50  0000 L CNN
-F 2 "Capacitors_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 1000 1200 50  0001 C CNN
-F 3 "" H 1000 1200 50  0000 C CNN
-	1    1000 1200
-	-1   0    0    1   
-$EndComp
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5A138E28
-P 1150 1400
-F 0 "#PWR?" H 1150 1150 50  0001 C CNN
-F 1 "GND" H 1150 1250 50  0000 C CNN
-F 2 "" H 1150 1400 50  0000 C CNN
-F 3 "" H 1150 1400 50  0000 C CNN
-	1    1150 1400
-	1    0    0    -1  
-$EndComp
-Text GLabel 900  1000 0    47   UnSpc ~ 0
-XTAL1
-Text GLabel 1400 1000 2    47   UnSpc ~ 0
-XTAL2
-Text GLabel 5800 2100 0    47   Input ~ 0
-~CS
-Text GLabel 5850 2200 0    47   Input ~ 0
-SCK
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5A13B0D4
-P 5750 2450
-F 0 "#PWR?" H 5750 2200 50  0001 C CNN
-F 1 "GND" H 5750 2300 47  0000 C CNN
-F 2 "" H 5750 2450 50  0000 C CNN
-F 3 "" H 5750 2450 50  0000 C CNN
-	1    5750 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L ElectricKettle-rescue:+5V #PWR?
-U 1 1 5A13B263
-P 5700 2300
-F 0 "#PWR?" H 5700 2150 50  0001 C CNN
-F 1 "+5V" H 5700 2440 47  0000 C CNN
-F 2 "" H 5700 2300 50  0000 C CNN
-F 3 "" H 5700 2300 50  0000 C CNN
-	1    5700 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L ElectricKettle-rescue:R R?
-U 1 1 5A13C0D9
-P 2100 1200
-F 0 "R?" V 2180 1200 50  0000 C CNN
-F 1 "1k2" V 2100 1200 50  0000 C CNN
-F 2 "w_pth_resistors:RC03" V 2030 1200 50  0001 C CNN
-F 3 "" H 2100 1200 50  0000 C CNN
-	1    2100 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L ElectricKettle-rescue:Led_Small D?
-U 1 1 5A13C248
-P 1750 1400
-F 0 "D?" H 1700 1300 50  0000 L CNN
-F 1 "MCU_LED" H 1600 1550 50  0000 L CNN
-F 2 "LEDs:LED_D5.0mm" V 1750 1400 50  0001 C CNN
-F 3 "" V 1750 1400 50  0000 C CNN
-	1    1750 1400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5A13C57D
-P 1750 1500
-F 0 "#PWR?" H 1750 1250 50  0001 C CNN
-F 1 "GND" H 1750 1350 50  0000 C CNN
-F 2 "" H 1750 1500 50  0000 C CNN
-F 3 "" H 1750 1500 50  0000 C CNN
-	1    1750 1500
-	1    0    0    -1  
-$EndComp
-Text GLabel 4250 2500 2    47   Input ~ 0
-RX
-Text GLabel 4250 2600 2    47   Output ~ 0
-TX
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5A13CB29
-P 1500 2900
-F 0 "#PWR?" H 1500 2650 50  0001 C CNN
-F 1 "GND" H 1500 2750 50  0000 C CNN
-F 2 "" H 1500 2900 50  0000 C CNN
-F 3 "" H 1500 2900 50  0000 C CNN
-	1    1500 2900
-	1    0    0    -1  
-$EndComp
-Text GLabel 1650 2450 2    47   Input ~ 0
-~RESET
-$Comp
-L ElectricKettle-rescue:R R?
-U 1 1 5A13CD76
-P 1500 2150
-F 0 "R?" V 1580 2150 50  0000 C CNN
-F 1 "470" V 1500 2150 50  0000 C CNN
-F 2 "w_pth_resistors:RC03" V 1430 2150 50  0001 C CNN
-F 3 "" H 1500 2150 50  0000 C CNN
-	1    1500 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L ElectricKettle-rescue:+5V #PWR?
-U 1 1 5A13CE61
-P 1500 2000
-F 0 "#PWR?" H 1500 1850 50  0001 C CNN
-F 1 "+5V" H 1500 2140 50  0000 C CNN
-F 2 "" H 1500 2000 50  0000 C CNN
-F 3 "" H 1500 2000 50  0000 C CNN
-	1    1500 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L ElectricKettle-rescue:C_Small C?
-U 1 1 5A13CE94
-P 1500 2650
-F 0 "C?" H 1510 2720 50  0000 L CNN
-F 1 "100n" H 1510 2570 50  0000 L CNN
-F 2 "Capacitors_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 1500 2650 50  0001 C CNN
-F 3 "" H 1500 2650 50  0000 C CNN
-	1    1500 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 900  2350 900 
-Wire Wire Line
-	2250 3100 2250 3200
-Wire Wire Line
-	2250 3200 2350 3200
-Wire Wire Line
-	2250 3100 2350 3100
-Connection ~ 2250 3200
-Wire Wire Line
-	1300 1100 1300 1000
-Wire Wire Line
-	1250 1000 1300 1000
-Wire Wire Line
-	900  1000 1000 1000
-Wire Wire Line
-	1000 1000 1000 1100
-Wire Wire Line
-	1000 1300 1000 1350
-Wire Wire Line
-	1000 1350 1150 1350
-Wire Wire Line
-	1300 1350 1300 1300
-Wire Wire Line
-	1150 1350 1150 1400
-Connection ~ 1150 1350
-Connection ~ 1000 1000
-Connection ~ 1300 1000
-Wire Wire Line
-	5700 2300 5850 2300
-Wire Wire Line
-	2250 1200 2300 1200
-Connection ~ 2300 900 
-Connection ~ 2300 1200
-Wire Wire Line
-	2300 1500 2350 1500
-Wire Wire Line
-	1950 1200 1750 1200
-Wire Wire Line
-	1750 1200 1750 1300
-Wire Wire Line
-	1400 2450 1500 2450
-Wire Wire Line
-	1500 2300 1500 2450
-Connection ~ 1500 2450
-$Comp
-L ElectricKettle-rescue:SW_PUSH_SMALL SW?
-U 1 1 5A13D299
-P 1300 2550
-F 0 "SW?" V 1450 2550 47  0000 C CNN
-F 1 "RESET" V 1250 2750 39  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 1300 2550 50  0001 C CNN
-F 3 "" H 1300 2550 50  0000 C CNN
-	1    1300 2550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1200 2650 1200 2850
-Wire Wire Line
-	1200 2850 1500 2850
-Wire Wire Line
-	1500 2750 1500 2850
-Connection ~ 1500 2850
-$Comp
-L ElectricKettle-rescue:GND #PWR?
+L HUA-rescue:GND-ElectricKettle-rescue #PWR013
 U 1 1 5A141F6F
-P 6850 1400
-F 0 "#PWR?" H 6850 1150 50  0001 C CNN
-F 1 "GND" H 6850 1250 50  0000 C CNN
-F 2 "" H 6850 1400 50  0000 C CNN
-F 3 "" H 6850 1400 50  0000 C CNN
-	1    6850 1400
+P 3950 1350
+F 0 "#PWR013" H 3950 1100 50  0001 C CNN
+F 1 "GND" H 3950 1200 50  0000 C CNN
+F 2 "" H 3950 1350 50  0000 C CNN
+F 3 "" H 3950 1350 50  0000 C CNN
+	1    3950 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 900  6150 950 
+	3250 850  3250 900 
 Wire Wire Line
-	6100 950  6150 950 
-Connection ~ 6150 950 
+	3200 900  3250 900 
+Connection ~ 3250 900 
 Wire Wire Line
-	6850 1250 6850 1350
+	3950 1200 3950 1300
 Wire Wire Line
-	6350 900  6350 950 
-Connection ~ 6350 950 
+	3450 850  3450 900 
+Connection ~ 3450 900 
 Wire Wire Line
-	6350 1300 6350 1350
-Connection ~ 6350 1350
+	3450 1250 3450 1300
+Connection ~ 3450 1300
 $Comp
-L ElectricKettle-rescue:CP C?
+L HUA-rescue:CP-ElectricKettle-rescue C4
 U 1 1 5A142A83
-P 6350 1150
-F 0 "C?" H 6375 1250 50  0000 L CNN
-F 1 "100u" H 6400 1050 50  0000 L CNN
-F 2 "Capacitors_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 6388 1000 50  0001 C CNN
-F 3 "" H 6350 1150 50  0000 C CNN
-	1    6350 1150
+P 3450 1100
+F 0 "C4" H 3475 1200 50  0000 L CNN
+F 1 "100u" H 3500 1000 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3488 950 50  0001 C CNN
+F 3 "" H 3450 1100 50  0000 C CNN
+	1    3450 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L ElectricKettle-rescue:CP C?
+L HUA-rescue:CP-ElectricKettle-rescue C5
 U 1 1 5A142DAA
-P 7350 1150
-F 0 "C?" H 7375 1250 50  0000 L CNN
-F 1 "10u" H 7400 1050 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 7388 1000 50  0001 C CNN
-F 3 "" H 7350 1150 50  0000 C CNN
-	1    7350 1150
+P 4450 1100
+F 0 "C5" H 4475 1200 50  0000 L CNN
+F 1 "10u" H 4500 1000 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4488 950 50  0001 C CNN
+F 3 "" H 4450 1100 50  0000 C CNN
+	1    4450 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 900  7350 950 
+	4450 850  4450 900 
 Wire Wire Line
-	7250 950  7350 950 
+	4350 900  4450 900 
 Wire Wire Line
-	7350 1350 7350 1300
-Connection ~ 6850 1350
+	4450 1300 4450 1250
+Connection ~ 3950 1300
 $Comp
-L ElectricKettle-rescue:+5V #PWR?
+L HUA-rescue:+5V-ElectricKettle-rescue #PWR014
 U 1 1 5A142F63
-P 7350 900
-F 0 "#PWR?" H 7350 750 50  0001 C CNN
-F 1 "+5V" H 7350 1040 50  0000 C CNN
-F 2 "" H 7350 900 50  0000 C CNN
-F 3 "" H 7350 900 50  0000 C CNN
-	1    7350 900 
+P 4450 850
+F 0 "#PWR014" H 4450 700 50  0001 C CNN
+F 1 "+5V" H 4450 990 50  0000 C CNN
+F 2 "" H 4450 850 50  0000 C CNN
+F 3 "" H 4450 850 50  0000 C CNN
+	1    4450 850 
 	1    0    0    -1  
 $EndComp
-Connection ~ 7350 950 
+Connection ~ 4450 900 
 $Comp
-L ElectricKettle-rescue:PWR_FLAG #FLG?
+L HUA-rescue:PWR_FLAG-ElectricKettle-rescue #FLG01
 U 1 1 5A1431FA
-P 6350 900
-F 0 "#FLG?" H 6350 995 50  0001 C CNN
-F 1 "PWR_FLAG" H 6350 1080 50  0001 C CNN
-F 2 "" H 6350 900 50  0000 C CNN
-F 3 "" H 6350 900 50  0000 C CNN
-	1    6350 900 
+P 3450 850
+F 0 "#FLG01" H 3450 945 50  0001 C CNN
+F 1 "PWR_FLAG" H 3450 1030 50  0001 C CNN
+F 2 "" H 3450 850 50  0000 C CNN
+F 3 "" H 3450 850 50  0000 C CNN
+	1    3450 850 
 	1    0    0    -1  
 $EndComp
 $Comp
-L ElectricKettle-rescue:PWR_FLAG #FLG?
+L HUA-rescue:PWR_FLAG-ElectricKettle-rescue #FLG02
 U 1 1 5A144B85
-P 7900 1250
-F 0 "#FLG?" H 7900 1345 50  0001 C CNN
-F 1 "PWR_FLAG" H 7900 1430 50  0001 C CNN
-F 2 "" H 7900 1250 50  0000 C CNN
-F 3 "" H 7900 1250 50  0000 C CNN
-	1    7900 1250
+P 5000 1200
+F 0 "#FLG02" H 5000 1295 50  0001 C CNN
+F 1 "PWR_FLAG" H 5000 1380 50  0001 C CNN
+F 2 "" H 5000 1200 50  0000 C CNN
+F 3 "" H 5000 1200 50  0000 C CNN
+	1    5000 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 1350 7900 1250
-Connection ~ 7350 1350
-Wire Notes Line
-	600  600  5000 600 
-Wire Notes Line
-	600  600  600  3850
-Wire Notes Line
-	5000 600  5000 3850
-Text Notes 2400 3800 0    47   ~ 0
-							MCU INTERFACE\nPULLDOWN SWITCH FOR RESET
-Wire Notes Line
-	5000 3850 600  3850
-Text Notes 6600 1700 0    47   ~ 0
+	5000 1300 5000 1200
+Connection ~ 4450 1300
+Text Notes 1150 2600 0    47   ~ 0
+MCU INTERFACE\n
+Text Notes 3700 1650 0    47   ~ 0
 POWER CIRCUIT\n
 Wire Notes Line
-	5250 1750 8050 1750
-Text Notes 5150 2800 0    47   ~ 0
-SENSOR (???) CONNECTIONS\n
+	2350 1700 5150 1700
 $Comp
-L ElectricKettle-rescue:Led_Small D?
+L HUA-rescue:Led_Small-ElectricKettle-rescue D5
 U 1 1 5A154330
-P 5700 1150
-F 0 "D?" H 5550 1100 50  0000 L CNN
-F 1 "PWR_LED" H 5600 1250 39  0000 L CNN
-F 2 "LEDs:LED_D5.0mm" V 5700 1150 50  0001 C CNN
-F 3 "" V 5700 1150 50  0000 C CNN
-	1    5700 1150
+P 2800 1100
+F 0 "D5" H 2650 1050 50  0000 L CNN
+F 1 "PWR_LED" H 2700 1200 39  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm" V 2800 1100 50  0001 C CNN
+F 3 "" V 2800 1100 50  0000 C CNN
+	1    2800 1100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ElectricKettle-rescue:R R?
+L HUA-rescue:R-ElectricKettle-rescue R6
 U 1 1 5A154609
-P 5950 950
-F 0 "R?" V 6030 950 50  0000 C CNN
-F 1 "1k" V 5950 950 50  0000 C CNN
-F 2 "w_pth_resistors:RC03" V 5880 950 50  0001 C CNN
-F 3 "" H 5950 950 50  0000 C CNN
-	1    5950 950 
+P 3050 900
+F 0 "R6" V 3130 900 50  0000 C CNN
+F 1 "1k" V 3050 900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2980 900 50  0001 C CNN
+F 3 "" H 3050 900 50  0000 C CNN
+	1    3050 900 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5700 1050 5700 950 
+	2800 1000 2800 900 
 Wire Wire Line
-	5700 950  5800 950 
+	2800 900  2900 900 
 Wire Wire Line
-	5700 1250 5700 1350
+	2800 1200 2800 1300
 $Comp
-L ElectricKettle-rescue:CONN_01X06 P?
-U 1 1 5A2264A8
-P 7850 2550
-F 0 "P?" H 7850 2900 50  0000 C CNN
-F 1 "FT232_MODULE" V 7950 2550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch1.27mm" H 7850 2550 50  0001 C CNN
-F 3 "" H 7850 2550 50  0000 C CNN
-	1    7850 2550
-	1    0    0    -1  
-$EndComp
-Text GLabel 7650 2300 0    47   Output ~ 0
-DTR
-Text GLabel 7650 2500 0    47   Output ~ 0
-RX
-Text GLabel 7650 2400 0    47   Input ~ 0
-TX
-Text GLabel 7650 2600 0    47   UnSpc ~ 0
-VCC
-Text GLabel 7650 2700 0    47   Input ~ 0
-CTS
-Text GLabel 7650 2800 0    47   UnSpc ~ 0
-GND
-Text GLabel 5800 2000 0    47   Output Italic 0
-MISO
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5A22910C
-P 7350 2600
-F 0 "#PWR?" H 7350 2350 50  0001 C CNN
-F 1 "GND" H 7350 2450 50  0000 C CNN
-F 2 "" H 7350 2600 50  0000 C CNN
-F 3 "" H 7350 2600 50  0000 C CNN
-	1    7350 2600
-	1    0    0    -1  
-$EndComp
-Text GLabel 7300 2550 0    47   UnSpc ~ 0
-GND
-Wire Wire Line
-	7300 2550 7350 2550
-Wire Wire Line
-	7350 2550 7350 2600
-$Comp
-L ElectricKettle-rescue:+5V #PWR?
-U 1 1 5A2292D9
-P 7350 2300
-F 0 "#PWR?" H 7350 2150 50  0001 C CNN
-F 1 "+5V" H 7350 2440 50  0000 C CNN
-F 2 "" H 7350 2300 50  0000 C CNN
-F 3 "" H 7350 2300 50  0000 C CNN
-	1    7350 2300
-	1    0    0    -1  
-$EndComp
-Text GLabel 7300 2350 0    47   UnSpc ~ 0
-VCC
-Wire Wire Line
-	7300 2350 7350 2350
-Wire Wire Line
-	7350 2350 7350 2300
-Text GLabel 7600 2000 0    47   Input ~ 0
-DTR
-Text GLabel 7900 2000 2    47   Input ~ 0
-~RESET
-$Comp
-L ElectricKettle-rescue:C_Small C?
-U 1 1 5A22A9C7
-P 7750 2000
-F 0 "C?" V 7650 1850 50  0000 L CNN
-F 1 "100n" V 7850 1800 50  0000 L CNN
-F 2 "Capacitors_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 7750 2000 50  0001 C CNN
-F 3 "" H 7750 2000 50  0000 C CNN
-	1    7750 2000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7850 2000 7900 2000
-Wire Wire Line
-	7650 2000 7600 2000
-Text GLabel 6900 2200 0    47   Input ~ 0
-CTS
-$Comp
-L ElectricKettle-rescue:R R?
-U 1 1 5A22DEFA
-P 6950 2400
-F 0 "R?" V 7030 2400 50  0000 C CNN
-F 1 "100k" V 6950 2400 50  0000 C CNN
-F 2 "w_pth_resistors:RC03" V 6880 2400 50  0001 C CNN
-F 3 "" H 6950 2400 50  0000 C CNN
-	1    6950 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 2200 6950 2200
-Wire Wire Line
-	6950 2200 6950 2250
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5A22E649
-P 6950 2550
-F 0 "#PWR?" H 6950 2300 50  0001 C CNN
-F 1 "GND" H 6950 2400 50  0000 C CNN
-F 2 "" H 6950 2550 50  0000 C CNN
-F 3 "" H 6950 2550 50  0000 C CNN
-	1    6950 2550
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	8200 1800 8200 3050
-Wire Notes Line
-	6650 1800 6650 3050
-Wire Notes Line
-	6650 1800 8200 1800
-Wire Notes Line
-	6650 3050 8200 3050
-Text Notes 6950 3000 0    47   Italic 0
-FT232 Serial Connections
-$Comp
-L ElectricKettle-rescue:LM7805CT U?
+L HUA-rescue:LM7805CT-ElectricKettle-rescue U2
 U 1 1 5A24C7DD
-P 6850 1000
-F 0 "U?" H 6650 1200 50  0000 C CNN
-F 1 "LM7805CT" H 6850 1200 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 6850 1100 50  0001 C CIN
-F 3 "" H 6850 1000 50  0000 C CNN
-	1    6850 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L ElectricKettle-rescue:CONN_01X05 P?
-U 1 1 5A36EE2B
-P 6050 2200
-F 0 "P?" H 6050 2500 50  0000 C CNN
-F 1 "MAX6675_MODULE" V 6150 2200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch1.27mm" H 6050 2200 50  0001 C CNN
-F 3 "" H 6050 2200 50  0000 C CNN
-	1    6050 2200
+P 3950 950
+F 0 "U2" H 3750 1150 50  0000 C CNN
+F 1 "LM7805CT" H 3950 1150 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3950 1050 50  0001 C CIN
+F 3 "" H 3950 950 50  0000 C CNN
+	1    3950 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 2000 5850 2000
+	3250 900  3450 900 
 Wire Wire Line
-	5800 2100 5850 2100
+	3450 900  3450 950 
 Wire Wire Line
-	5750 2450 5750 2400
+	3450 900  3550 900 
 Wire Wire Line
-	5750 2400 5850 2400
+	3450 1300 3950 1300
+Wire Wire Line
+	3950 1300 3950 1350
+Wire Wire Line
+	3950 1300 4450 1300
+Wire Wire Line
+	4450 900  4450 950 
+Wire Wire Line
+	4450 1300 4700 1300
 Wire Notes Line
-	6600 2900 6600 1800
+	5150 1700 5150 550 
 Wire Notes Line
-	6600 1800 5050 1800
+	5150 550  2350 550 
 Wire Notes Line
-	5050 1800 5050 2900
-Wire Notes Line
-	5050 2900 6600 2900
+	2350 550  2350 1700
 $Comp
-L ElectricKettle-rescue:R R?
-U 1 1 5A37174A
-P 2150 1500
-F 0 "R?" V 2230 1500 50  0000 C CNN
-F 1 "10k" V 2150 1500 50  0000 C CNN
-F 2 "w_pth_resistors:RC03" V 2080 1500 50  0001 C CNN
-F 3 "" H 2150 1500 50  0000 C CNN
-	1    2150 1500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2000 1500 1950 1500
-Wire Wire Line
-	1950 1500 1950 1350
-Wire Wire Line
-	2300 1350 1950 1350
-Wire Wire Line
-	2300 850  2300 900 
-Wire Wire Line
-	2250 3200 2250 3250
-Wire Wire Line
-	1150 1350 1300 1350
-Wire Wire Line
-	1000 1000 1050 1000
-Wire Wire Line
-	1300 1000 1400 1000
-Wire Wire Line
-	2300 900  2300 1200
-Wire Wire Line
-	2300 1200 2350 1200
-Wire Wire Line
-	2300 1200 2300 1350
-Wire Wire Line
-	1500 2450 1650 2450
-Wire Wire Line
-	1500 2450 1500 2550
-Wire Wire Line
-	1500 2850 1500 2900
-Wire Wire Line
-	6150 950  6350 950 
-Wire Wire Line
-	6350 950  6350 1000
-Wire Wire Line
-	6350 950  6450 950 
-Wire Wire Line
-	6350 1350 6850 1350
-Wire Wire Line
-	6850 1350 6850 1400
-Wire Wire Line
-	6850 1350 7350 1350
-Wire Wire Line
-	7350 950  7350 1000
-Wire Wire Line
-	7350 1350 7600 1350
-Wire Notes Line
-	8050 1750 8050 600 
-Wire Notes Line
-	8050 600  5250 600 
-Wire Notes Line
-	5250 600  5250 1750
-$Comp
-L power:+12V #PWR?
+L power:+12V #PWR010
 U 1 1 5ACDEF62
-P 6150 900
-F 0 "#PWR?" H 6150 750 50  0001 C CNN
-F 1 "+12V" H 6165 1073 50  0000 C CNN
-F 2 "" H 6150 900 50  0000 C CNN
-F 3 "" H 6150 900 50  0000 C CNN
-	1    6150 900 
+P 3250 850
+F 0 "#PWR010" H 3250 700 50  0001 C CNN
+F 1 "+12V" H 3265 1023 50  0000 C CNN
+F 2 "" H 3250 850 50  0000 C CNN
+F 3 "" H 3250 850 50  0000 C CNN
+	1    3250 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 1350 6350 1350
+	2800 1300 3450 1300
 $Comp
-L device:C C?
+L HUA-rescue:C-device C6
 U 1 1 5ACE4227
-P 7600 1150
-F 0 "C?" H 7650 1250 50  0000 L CNN
-F 1 "100n" H 7650 1050 50  0000 L CNN
-F 2 "" H 7638 1000 50  0000 C CNN
-F 3 "" H 7600 1150 50  0000 C CNN
-	1    7600 1150
+P 4700 1100
+F 0 "C6" H 4750 1200 50  0000 L CNN
+F 1 "100n" H 4750 1000 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 4738 950 50  0001 C CNN
+F 3 "" H 4700 1100 50  0000 C CNN
+	1    4700 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 1300 7600 1350
-Connection ~ 7600 1350
+	4700 1250 4700 1300
+Connection ~ 4700 1300
 Wire Wire Line
-	7600 1350 7900 1350
+	4700 1300 5000 1300
 Wire Wire Line
-	7600 1000 7600 950 
+	4700 950  4700 900 
 Wire Wire Line
-	7600 950  7350 950 
+	4700 900  4450 900 
 $Comp
-L maxim:DS1302 U?
-U 1 1 5ACFAF73
-P 9300 1450
-F 0 "U?" H 9300 1450 50  0000 C CNN
-F 1 "DS1302" H 9300 1550 50  0000 C CNN
-F 2 "" H 9300 1450 50  0000 C CNN
-F 3 "" H 9300 1450 50  0000 C CNN
-	1    9300 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:Crystal_Small Y?
+L device:Crystal_Small Y1
 U 1 1 5ACFB13F
-P 8600 1750
-F 0 "Y?" V 8550 1550 50  0000 L CNN
-F 1 "Crystal_Small" V 8850 1550 50  0000 L CNN
-F 2 "" H 8600 1750 50  0000 C CNN
-F 3 "" H 8600 1750 50  0000 C CNN
-	1    8600 1750
+P 5550 1500
+F 0 "Y1" V 5500 1300 50  0000 L CNN
+F 1 "Crystal_Small" V 5800 1300 50  0000 L CNN
+F 2 "Crystal:Crystal_AT310_D3.0mm_L10.0mm_Vertical" H 5550 1500 50  0001 C CNN
+F 3 "" H 5550 1500 50  0000 C CNN
+	1    5550 1500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8600 1650 8700 1650
-Wire Wire Line
-	8600 1850 8700 1850
+	5700 1450 5750 1450
 $Comp
-L ElectricKettle-rescue:GND #PWR?
+L HUA-rescue:GND-ElectricKettle-rescue #PWR021
 U 1 1 5ACFE02E
-P 9300 2050
-F 0 "#PWR?" H 9300 1800 50  0001 C CNN
-F 1 "GND" H 9305 1877 50  0000 C CNN
-F 2 "" H 9300 2050 50  0000 C CNN
-F 3 "" H 9300 2050 50  0000 C CNN
-	1    9300 2050
+P 6250 1750
+F 0 "#PWR021" H 6250 1500 50  0001 C CNN
+F 1 "GND" H 6255 1577 50  0000 C CNN
+F 2 "" H 6250 1750 50  0000 C CNN
+F 3 "" H 6250 1750 50  0000 C CNN
+	1    6250 1750
 	1    0    0    -1  
 $EndComp
 $Comp
-L ElectricKettle-rescue:+5V #PWR?
-U 1 1 5ACFE189
-P 9300 850
-F 0 "#PWR?" H 9300 700 50  0001 C CNN
-F 1 "+5V" H 9315 1023 50  0000 C CNN
-F 2 "" H 9300 850 50  0000 C CNN
-F 3 "" H 9300 850 50  0000 C CNN
-	1    9300 850 
-	1    0    0    -1  
-$EndComp
-Text GLabel 9900 1150 2    50   BiDi ~ 0
-RTC_DATA
-$Comp
-L w_device:BAT BAT?
+L HUA-rescue:BAT-w_device BAT1
 U 1 1 5ACFE4AE
-P 10000 1950
-F 0 "BAT?" H 10078 1996 50  0000 L CNN
-F 1 "BAT" H 10078 1905 50  0000 L CNN
-F 2 "" H 10000 1950 60  0000 C CNN
-F 3 "" H 10000 1950 60  0000 C CNN
-	1    10000 1950
-	1    0    0    -1  
+P 6450 850
+F 0 "BAT1" H 6528 896 50  0000 L CNN
+F 1 "BAT" H 6528 805 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_106_1x20mm" H 6450 850 60  0001 C CNN
+F 3 "" H 6450 850 60  0000 C CNN
+	1    6450 850 
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9900 1750 10000 1750
+	6250 950  6250 900 
 Wire Wire Line
-	10000 1750 10000 1850
+	6250 850  6350 850 
 $Comp
-L ElectricKettle-rescue:GND #PWR?
+L HUA-rescue:GND-ElectricKettle-rescue #PWR022
 U 1 1 5ACFFC42
-P 10000 2050
-F 0 "#PWR?" H 10000 1800 50  0001 C CNN
-F 1 "GND" H 10005 1877 50  0000 C CNN
-F 2 "" H 10000 2050 50  0000 C CNN
-F 3 "" H 10000 2050 50  0000 C CNN
-	1    10000 2050
-	1    0    0    -1  
+P 6550 850
+F 0 "#PWR022" H 6550 600 50  0001 C CNN
+F 1 "GND" H 6555 677 50  0000 C CNN
+F 2 "" H 6550 850 50  0000 C CNN
+F 3 "" H 6550 850 50  0000 C CNN
+	1    6550 850 
+	0    -1   -1   0   
 $EndComp
-Text GLabel 8700 1350 0    47   Input ~ 0
-~RTC_RST
-Text GLabel 8700 1150 0    50   Input ~ 0
-RTC_SCLK
-Text Notes 9050 2400 0    50   ~ 0
+Text Notes 6000 2100 0    50   ~ 0
 RTC_MODULE\n
 Wire Notes Line
-	10400 2450 10400 600 
-Wire Notes Line
-	10400 600  8250 600 
-Wire Notes Line
-	8250 600  8250 2450
-Wire Notes Line
-	8250 2450 10400 2450
-Text GLabel 4250 1750 2    47   Input ~ 0
-HUM_IN
-$Comp
-L ElectricKettle-rescue:ATMEGA328-P IC?
-U 1 1 5A137ECC
-P 3250 2000
-F 0 "IC?" H 2500 3250 50  0000 L BNN
-F 1 "ATMEGA328-P" H 3650 600 50  0000 L BNN
-F 2 "Housings_DIP:DIP-28_W7.62mm_LongPads" H 3250 2000 50  0001 C CIN
-F 3 "" H 3250 2000 50  0000 C CNN
-	1    3250 2000
-	1    0    0    -1  
-$EndComp
-Text GLabel 4250 3000 2    47   Output ~ 0
+	7350 550  5200 550 
+Text GLabel 1900 1550 2    47   Input ~ 0
+HUM1_IN
+Text GLabel 1900 1050 2    47   Output ~ 0
 VALV3
-Text GLabel 4250 3100 2    47   Output ~ 0
+Text GLabel 1900 1150 2    47   Output ~ 0
 VALV2
-Text GLabel 4250 3200 2    47   Output ~ 0
+Text GLabel 1900 1250 2    47   Output ~ 0
 VALV1
-Text GLabel 4250 900  2    50   Output ~ 0
-RTC_RST
-Text GLabel 4250 1000 2    50   BiDi ~ 0
-RTC_DATA
-Text GLabel 4250 1100 2    50   Output ~ 0
-RTC_SCLK
-Text GLabel 4250 1200 2    50   Output ~ 0
-MOSI
-Text GLabel 4250 1300 2    50   Input ~ 0
-MISO
-Text GLabel 4250 1400 2    50   Output ~ 0
-SCK
-Text GLabel 4250 2700 2    47   Output ~ 0
-FLUX
 $Comp
-L device:C C?
-U 1 1 5AD0E469
-P 1950 1750
-F 0 "C?" H 2065 1796 50  0000 L CNN
-F 1 "100n" H 2065 1705 50  0000 L CNN
-F 2 "" H 1988 1600 50  0000 C CNN
-F 3 "" H 1950 1750 50  0000 C CNN
-	1    1950 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 1500 1950 1600
-Connection ~ 1950 1500
-$Comp
-L ElectricKettle-rescue:GND #PWR?
+L HUA-rescue:GND-ElectricKettle-rescue #PWR03
 U 1 1 5AD0FDEC
-P 1950 1900
-F 0 "#PWR?" H 1950 1650 50  0001 C CNN
-F 1 "GND" H 1955 1727 50  0000 C CNN
-F 2 "" H 1950 1900 50  0000 C CNN
-F 3 "" H 1950 1900 50  0000 C CNN
-	1    1950 1900
-	1    0    0    -1  
-$EndComp
-Text GLabel 4250 2800 2    50   Output ~ 0
-RL1
-Text GLabel 4250 2900 2    50   Output ~ 0
-RL2
-Text GLabel 4250 1850 2    47   Input ~ 0
-OW_SENSOR1
-Text GLabel 4250 1950 2    47   Input ~ 0
-OW_SENSOR2
-Text GLabel 4250 2050 2    47   Input ~ 0
-OW_SENSOR3
-Text GLabel 4250 2150 2    47   BiDi ~ 0
-SDA
-Text GLabel 4250 2250 2    47   BiDi ~ 0
-SCL
-Text GLabel 1750 3450 2    50   Input ~ 0
-MOSI
-Text GLabel 1250 3350 0    50   Output ~ 0
-MISO
-Text GLabel 1250 3450 0    50   Input ~ 0
-SCK
-$Comp
-L conn:CONN_02X03 P?
-U 1 1 5AD16B7D
-P 1500 3450
-F 0 "P?" H 1500 3200 50  0000 C CNN
-F 1 "ISP_HEADER" H 1500 3674 50  0000 C CNN
-F 2 "" H 1500 2250 50  0000 C CNN
-F 3 "" H 1500 2250 50  0000 C CNN
-	1    1500 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5AD16EDC
-P 1800 3600
-F 0 "#PWR?" H 1800 3350 50  0001 C CNN
-F 1 "GND" H 1805 3427 50  0000 C CNN
-F 2 "" H 1800 3600 50  0000 C CNN
-F 3 "" H 1800 3600 50  0000 C CNN
-	1    1800 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 3550 1800 3550
-Wire Wire Line
-	1800 3550 1800 3600
-Text GLabel 1250 3550 0    37   Output ~ 0
-~RESET
-$Comp
-L ElectricKettle-rescue:+5V #PWR?
-U 1 1 5AD18D6E
-P 1800 3300
-F 0 "#PWR?" H 1800 3150 50  0001 C CNN
-F 1 "+5V" H 1815 3473 50  0000 C CNN
-F 2 "" H 1800 3300 50  0000 C CNN
-F 3 "" H 1800 3300 50  0000 C CNN
-	1    1800 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 3350 1800 3350
-Wire Wire Line
-	1800 3350 1800 3300
-$Comp
-L conn:CONN_01X02 P?
-U 1 1 5AD1CC58
-P 9200 3950
-F 0 "P?" H 9150 3800 50  0000 L CNN
-F 1 "HUM_SENSOR" V 9300 3650 50  0000 L CNN
-F 2 "" H 9200 3950 50  0000 C CNN
-F 3 "" H 9200 3950 50  0000 C CNN
-	1    9200 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R?
-U 1 1 5AD1CFF5
-P 8700 3550
-F 0 "R?" V 8493 3550 50  0000 C CNN
-F 1 "1k" V 8700 3550 50  0000 C CNN
-F 2 "" V 8630 3550 50  0000 C CNN
-F 3 "" H 8700 3550 50  0000 C CNN
-	1    8700 3550
-	-1   0    0    1   
-$EndComp
-$Comp
-L device:R R?
-U 1 1 5AD1D0D8
-P 8450 4150
-F 0 "R?" V 8350 4150 50  0000 C CNN
-F 1 "1k" V 8450 4150 50  0000 C CNN
-F 2 "" V 8380 4150 50  0000 C CNN
-F 3 "" H 8450 4150 50  0000 C CNN
-	1    8450 4150
+P 1000 2150
+F 0 "#PWR03" H 1000 1900 50  0001 C CNN
+F 1 "GND" H 1005 1977 50  0000 C CNN
+F 2 "" H 1000 2150 50  0000 C CNN
+F 3 "" H 1000 2150 50  0000 C CNN
+	1    1000 2150
 	0    1    1    0   
 $EndComp
+Text GLabel 1900 850  2    50   Output ~ 0
+RL1
+Text GLabel 1900 950  2    50   Output ~ 0
+RL2
 $Comp
-L device:R R?
-U 1 1 5AD1DB8B
-P 8700 3950
-F 0 "R?" H 8630 3904 50  0000 R CNN
-F 1 "VAR" V 8700 4000 50  0000 R CNN
-F 2 "" V 8630 3950 50  0000 C CNN
-F 3 "" H 8700 3950 50  0000 C CNN
-	1    8700 3950
+L HUA-rescue:CONN_01X02-conn P11
+U 1 1 5AD1CC58
+P 8750 3000
+F 0 "P11" H 8650 2850 50  0000 L CNN
+F 1 "HUM1_SENSOR" V 8850 2700 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8750 3000 50  0001 C CNN
+F 3 "" H 8750 3000 50  0000 C CNN
+	1    8750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R18
+U 1 1 5AD1CFF5
+P 8250 2600
+F 0 "R18" V 8043 2600 50  0000 C CNN
+F 1 "1k" V 8250 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8180 2600 50  0001 C CNN
+F 3 "" H 8250 2600 50  0000 C CNN
+	1    8250 2600
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8700 3750 8700 3800
-Wire Wire Line
-	9000 3900 8900 3900
-Wire Wire Line
-	8900 3900 8900 3750
-Wire Wire Line
-	8900 3750 8700 3750
-Wire Wire Line
-	8600 4150 8700 4150
-Wire Wire Line
-	8900 4150 8900 4000
-Wire Wire Line
-	8900 4000 9000 4000
-Wire Wire Line
-	8700 4100 8700 4150
-Connection ~ 8700 4150
-Wire Wire Line
-	8700 4150 8900 4150
 $Comp
-L device:R R?
+L device:R R17
+U 1 1 5AD1D0D8
+P 8000 3200
+F 0 "R17" V 7900 3200 50  0000 C CNN
+F 1 "1k" V 8000 3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7930 3200 50  0001 C CNN
+F 3 "" H 8000 3200 50  0000 C CNN
+	1    8000 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8550 2950 8450 2950
+Wire Wire Line
+	8150 3200 8250 3200
+Wire Wire Line
+	8450 3200 8450 3050
+Wire Wire Line
+	8450 3050 8550 3050
+Wire Wire Line
+	8250 3150 8250 3200
+Connection ~ 8250 3200
+Wire Wire Line
+	8250 3200 8400 3200
+$Comp
+L device:R R16
 U 1 1 5AD25C82
-P 8250 4350
-F 0 "R?" V 8350 4350 50  0000 C CNN
-F 1 "100k" V 8150 4350 50  0000 C CNN
-F 2 "" V 8180 4350 50  0000 C CNN
-F 3 "" H 8250 4350 50  0000 C CNN
-	1    8250 4350
+P 7800 3400
+F 0 "R16" V 7900 3400 50  0000 C CNN
+F 1 "100k" V 7800 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7730 3400 50  0001 C CNN
+F 3 "" H 7800 3400 50  0000 C CNN
+	1    7800 3400
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8250 4200 8250 4150
+	7800 3250 7800 3200
 Wire Wire Line
-	8250 4150 8300 4150
+	7800 3200 7850 3200
 $Comp
-L ElectricKettle-rescue:GND #PWR?
+L HUA-rescue:GND-ElectricKettle-rescue #PWR027
 U 1 1 5AD2A779
-P 8250 4500
-F 0 "#PWR?" H 8250 4250 50  0001 C CNN
-F 1 "GND" H 8255 4327 50  0000 C CNN
-F 2 "" H 8250 4500 50  0000 C CNN
-F 3 "" H 8250 4500 50  0000 C CNN
-	1    8250 4500
+P 7800 3550
+F 0 "#PWR027" H 7800 3300 50  0001 C CNN
+F 1 "GND" H 7805 3377 50  0000 C CNN
+F 2 "" H 7800 3550 50  0000 C CNN
+F 3 "" H 7800 3550 50  0000 C CNN
+	1    7800 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 4150 0    47   Output ~ 0
-HUM_IN
+Text GLabel 7750 3200 0    47   Output ~ 0
+HUM1_IN
 Wire Wire Line
-	8200 4150 8250 4150
-Connection ~ 8250 4150
+	7750 3200 7800 3200
+Connection ~ 7800 3200
 $Comp
-L ElectricKettle-rescue:+5V #PWR?
-U 1 1 5AD2DE94
-P 8700 3400
-F 0 "#PWR?" H 8700 3250 50  0001 C CNN
-F 1 "+5V" H 8715 3573 50  0000 C CNN
-F 2 "" H 8700 3400 50  0000 C CNN
-F 3 "" H 8700 3400 50  0000 C CNN
-	1    8700 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L w_relay:RELAY_HJR-3FF_Z RLY?
+L HUA-rescue:RELAY_HJR-3FF_Z-w_relay RLY1
 U 1 1 5AD31353
-P 1800 4550
-F 0 "RLY?" V 2150 4600 60  0000 R CNN
-F 1 "RELAY_HJR-3FF_Z" V 1747 4359 60  0001 R CNN
-F 2 "" H 1800 4550 60  0000 C CNN
-F 3 "" H 1800 4550 60  0000 C CNN
-	1    1800 4550
+P 1800 3350
+F 0 "RLY1" V 2150 3400 60  0000 R CNN
+F 1 "RELAY_HJR-3FF_Z" V 1747 3159 60  0001 R CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 1800 3350 60  0001 C CNN
+F 3 "" H 1800 3350 60  0000 C CNN
+	1    1800 3350
 	0    -1   -1   0   
 $EndComp
 $Comp
-L transistors:BC546 Q?
+L HUA-rescue:BC546-transistors Q1
 U 1 1 5AD31C6F
-P 1550 5050
-F 0 "Q?" H 1741 5096 50  0000 L CNN
-F 1 "BC546" H 1741 5005 50  0000 L CNN
-F 2 "TO-92" H 1741 5005 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1741 4959 50  0001 L CNN
-	1    1550 5050
+P 1550 3850
+F 0 "Q1" H 1741 3896 50  0000 L CNN
+F 1 "BC546" H 1741 3805 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1741 3805 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1741 3759 50  0001 L CNN
+	1    1550 3850
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
+L device:R R1
 U 1 1 5AD31E84
-P 1100 5050
-F 0 "R?" V 1000 5050 50  0000 C CNN
-F 1 "2k7" V 1100 5050 50  0000 C CNN
-F 2 "" V 1030 5050 50  0000 C CNN
-F 3 "" H 1100 5050 50  0000 C CNN
-	1    1100 5050
+P 1100 3850
+F 0 "R1" V 1000 3850 50  0000 C CNN
+F 1 "1k" V 1100 3850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1030 3850 50  0001 C CNN
+F 3 "" H 1100 3850 50  0000 C CNN
+	1    1100 3850
 	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 3150 1650 3100
+Wire Wire Line
+	1650 3100 1450 3100
+Wire Wire Line
+	1450 3100 1450 3250
+Connection ~ 1650 3100
+Wire Wire Line
+	1650 3100 1650 3050
+Wire Wire Line
+	1450 3550 1450 3600
+Wire Wire Line
+	1450 3600 1650 3600
+Wire Wire Line
+	1650 3600 1650 3550
+Wire Wire Line
+	1650 3600 1650 3650
+Connection ~ 1650 3600
+$Comp
+L HUA-rescue:CONN_01X02-conn P1
+U 1 1 5AD40F91
+P 2300 3100
+F 0 "P1" H 2250 2950 50  0000 L CNN
+F 1 "EXT_V1" V 2400 3000 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2300 3100 50  0001 C CNN
+F 3 "" H 2300 3100 50  0000 C CNN
+	1    2300 3100
+	1    0    0    -1  
 $EndComp
 $Comp
-L device:D D?
-U 1 1 5AD3241D
-P 1450 4600
-F 0 "D?" V 1400 4450 50  0000 L CNN
-F 1 "D" V 1500 4450 50  0000 L CNN
-F 2 "" H 1450 4600 50  0000 C CNN
-F 3 "" H 1450 4600 50  0000 C CNN
-	1    1450 4600
+L HUA-rescue:CONN_01X02-conn P2
+U 1 1 5AD41003
+P 2300 3550
+F 0 "P2" H 2250 3400 50  0000 L CNN
+F 1 "VALV_1" V 2400 3350 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2300 3550 50  0001 C CNN
+F 3 "" H 2300 3550 50  0000 C CNN
+	1    2300 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3150 2050 3150
+Wire Wire Line
+	2050 3150 2050 3500
+Wire Wire Line
+	2050 3500 2100 3500
+Wire Wire Line
+	2100 3050 1850 3050
+Wire Wire Line
+	1850 3050 1850 3150
+Wire Wire Line
+	2100 3600 1900 3600
+Wire Wire Line
+	1900 3600 1900 3550
+NoConn ~ 1950 3150
+$Comp
+L HUA-rescue:GND-ElectricKettle-rescue #PWR04
+U 1 1 5AD5A128
+P 1500 4200
+F 0 "#PWR04" H 1500 3950 50  0001 C CNN
+F 1 "GND" H 1505 4027 50  0000 C CNN
+F 2 "" H 1500 4200 50  0000 C CNN
+F 3 "" H 1500 4200 50  0000 C CNN
+	1    1500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C1
+U 1 1 5AD5A44F
+P 1300 4000
+F 0 "C1" H 1100 4000 50  0000 L CNN
+F 1 "100n" H 1050 3900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 1300 4000 50  0001 C CNN
+F 3 "" H 1300 4000 50  0000 C CNN
+	1    1300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3900 1300 3850
+Wire Wire Line
+	1300 3850 1350 3850
+Wire Wire Line
+	1250 3850 1300 3850
+Connection ~ 1300 3850
+Wire Wire Line
+	1300 4100 1300 4150
+Wire Wire Line
+	1300 4150 1500 4150
+Wire Wire Line
+	1500 4150 1500 4200
+Wire Wire Line
+	1500 4150 1650 4150
+Wire Wire Line
+	1650 4150 1650 4050
+Connection ~ 1500 4150
+Text GLabel 950  3850 0    50   Input ~ 0
+VALV1
+$Comp
+L power:+12V #PWR06
+U 1 1 5AD6F969
+P 1650 3050
+F 0 "#PWR06" H 1650 2900 50  0001 C CNN
+F 1 "+12V" H 1665 3223 50  0000 C CNN
+F 2 "" H 1650 3050 50  0000 C CNN
+F 3 "" H 1650 3050 50  0000 C CNN
+	1    1650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L HUA-rescue:RELAY_HJR-3FF_Z-w_relay RLY3
+U 1 1 5AD701A8
+P 3650 3350
+F 0 "RLY3" V 4000 3350 60  0000 R CNN
+F 1 "RELAY_HJR-3FF_Z" V 3597 3159 60  0001 R CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 3650 3350 60  0001 C CNN
+F 3 "" H 3650 3350 60  0000 C CNN
+	1    3650 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L HUA-rescue:BC546-transistors Q3
+U 1 1 5AD701AE
+P 3400 3850
+F 0 "Q3" H 3591 3896 50  0000 L CNN
+F 1 "BC546" H 3591 3805 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3591 3805 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3591 3759 50  0001 L CNN
+	1    3400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R5
+U 1 1 5AD701B4
+P 2950 3850
+F 0 "R5" V 2850 3850 50  0000 C CNN
+F 1 "1k" V 2950 3850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2880 3850 50  0001 C CNN
+F 3 "" H 2950 3850 50  0000 C CNN
+	1    2950 3850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1650 4350 1650 4300
+	3500 3150 3500 3100
 Wire Wire Line
-	1650 4300 1450 4300
+	3500 3100 3300 3100
 Wire Wire Line
-	1450 4300 1450 4450
-Connection ~ 1650 4300
+	3300 3100 3300 3250
+Connection ~ 3500 3100
 Wire Wire Line
-	1650 4300 1650 4250
+	3500 3100 3500 3050
 Wire Wire Line
-	1450 4750 1450 4800
+	3300 3550 3300 3600
 Wire Wire Line
-	1450 4800 1650 4800
+	3300 3600 3500 3600
+Wire Wire Line
+	3500 3600 3500 3550
+Wire Wire Line
+	3500 3600 3500 3650
+Connection ~ 3500 3600
+$Comp
+L HUA-rescue:CONN_01X02-conn P5
+U 1 1 5AD701CA
+P 4150 3100
+F 0 "P5" H 4100 2950 50  0000 L CNN
+F 1 "EXT_V2" V 4250 3000 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4150 3100 50  0001 C CNN
+F 3 "" H 4150 3100 50  0000 C CNN
+	1    4150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L HUA-rescue:CONN_01X02-conn P6
+U 1 1 5AD701D0
+P 4150 3550
+F 0 "P6" H 4100 3400 50  0000 L CNN
+F 1 "VALV_2" V 4250 3350 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4150 3550 50  0001 C CNN
+F 3 "" H 4150 3550 50  0000 C CNN
+	1    4150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3150 3900 3150
+Wire Wire Line
+	3900 3150 3900 3500
+Wire Wire Line
+	3900 3500 3950 3500
+Wire Wire Line
+	3950 3050 3700 3050
+Wire Wire Line
+	3700 3050 3700 3150
+Wire Wire Line
+	3950 3600 3750 3600
+Wire Wire Line
+	3750 3600 3750 3550
+NoConn ~ 3800 3150
+$Comp
+L HUA-rescue:GND-ElectricKettle-rescue #PWR011
+U 1 1 5AD701DE
+P 3350 4200
+F 0 "#PWR011" H 3350 3950 50  0001 C CNN
+F 1 "GND" H 3355 4027 50  0000 C CNN
+F 2 "" H 3350 4200 50  0000 C CNN
+F 3 "" H 3350 4200 50  0000 C CNN
+	1    3350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C3
+U 1 1 5AD701E4
+P 3150 4000
+F 0 "C3" H 2950 4000 50  0000 L CNN
+F 1 "100n" H 2900 3900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 3150 4000 50  0001 C CNN
+F 3 "" H 3150 4000 50  0000 C CNN
+	1    3150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3900 3150 3850
+Wire Wire Line
+	3150 3850 3200 3850
+Wire Wire Line
+	3100 3850 3150 3850
+Connection ~ 3150 3850
+Wire Wire Line
+	3150 4100 3150 4150
+Wire Wire Line
+	3150 4150 3350 4150
+Wire Wire Line
+	3350 4150 3350 4200
+Wire Wire Line
+	3350 4150 3500 4150
+Wire Wire Line
+	3500 4150 3500 4050
+Connection ~ 3350 4150
+Text GLabel 2800 3850 0    50   Input ~ 0
+VALV2
+$Comp
+L power:+12V #PWR012
+U 1 1 5AD701F5
+P 3500 3050
+F 0 "#PWR012" H 3500 2900 50  0001 C CNN
+F 1 "+12V" H 3515 3223 50  0000 C CNN
+F 2 "" H 3500 3050 50  0000 C CNN
+F 3 "" H 3500 3050 50  0000 C CNN
+	1    3500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L HUA-rescue:RELAY_HJR-3FF_Z-w_relay RLY5
+U 1 1 5AD76657
+P 5500 3350
+F 0 "RLY5" V 5850 3350 60  0000 R CNN
+F 1 "RELAY_HJR-3FF_Z" V 5447 3159 60  0001 R CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 5500 3350 60  0001 C CNN
+F 3 "" H 5500 3350 60  0000 C CNN
+	1    5500 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L HUA-rescue:BC546-transistors Q5
+U 1 1 5AD7665D
+P 5250 3850
+F 0 "Q5" H 5441 3896 50  0000 L CNN
+F 1 "BC546" H 5441 3805 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5441 3805 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5441 3759 50  0001 L CNN
+	1    5250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R9
+U 1 1 5AD76663
+P 4800 3850
+F 0 "R9" V 4700 3850 50  0000 C CNN
+F 1 "1k" V 4800 3850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4730 3850 50  0001 C CNN
+F 3 "" H 4800 3850 50  0000 C CNN
+	1    4800 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 3150 5350 3100
+Wire Wire Line
+	5350 3100 5150 3100
+Wire Wire Line
+	5150 3100 5150 3250
+Connection ~ 5350 3100
+Wire Wire Line
+	5350 3100 5350 3050
+Wire Wire Line
+	5150 3550 5150 3600
+Wire Wire Line
+	5150 3600 5350 3600
+Wire Wire Line
+	5350 3600 5350 3550
+Wire Wire Line
+	5350 3600 5350 3650
+Connection ~ 5350 3600
+$Comp
+L HUA-rescue:CONN_01X02-conn P9
+U 1 1 5AD76679
+P 6000 3100
+F 0 "P9" H 5950 2950 50  0000 L CNN
+F 1 "EXT_V3" V 6100 3000 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6000 3100 50  0001 C CNN
+F 3 "" H 6000 3100 50  0000 C CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L HUA-rescue:CONN_01X02-conn P10
+U 1 1 5AD7667F
+P 6000 3550
+F 0 "P10" H 5950 3400 50  0000 L CNN
+F 1 "VALV_3" V 6100 3350 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6000 3550 50  0001 C CNN
+F 3 "" H 6000 3550 50  0000 C CNN
+	1    6000 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3150 5750 3150
+Wire Wire Line
+	5750 3150 5750 3500
+Wire Wire Line
+	5750 3500 5800 3500
+Wire Wire Line
+	5800 3050 5550 3050
+Wire Wire Line
+	5550 3050 5550 3150
+Wire Wire Line
+	5800 3600 5600 3600
+Wire Wire Line
+	5600 3600 5600 3550
+NoConn ~ 5650 3150
+$Comp
+L HUA-rescue:GND-ElectricKettle-rescue #PWR016
+U 1 1 5AD7668D
+P 5200 4200
+F 0 "#PWR016" H 5200 3950 50  0001 C CNN
+F 1 "GND" H 5205 4027 50  0000 C CNN
+F 2 "" H 5200 4200 50  0000 C CNN
+F 3 "" H 5200 4200 50  0000 C CNN
+	1    5200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C8
+U 1 1 5AD76693
+P 5000 4000
+F 0 "C8" H 4800 4000 50  0000 L CNN
+F 1 "100n" H 4750 3900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 5000 4000 50  0001 C CNN
+F 3 "" H 5000 4000 50  0000 C CNN
+	1    5000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3900 5000 3850
+Wire Wire Line
+	5000 3850 5050 3850
+Wire Wire Line
+	4950 3850 5000 3850
+Connection ~ 5000 3850
+Wire Wire Line
+	5000 4100 5000 4150
+Wire Wire Line
+	5000 4150 5200 4150
+Wire Wire Line
+	5200 4150 5200 4200
+Wire Wire Line
+	5200 4150 5350 4150
+Wire Wire Line
+	5350 4150 5350 4050
+Connection ~ 5200 4150
+Text GLabel 4650 3850 0    50   Input ~ 0
+VALV3
+$Comp
+L power:+12V #PWR018
+U 1 1 5AD766A4
+P 5350 3050
+F 0 "#PWR018" H 5350 2900 50  0001 C CNN
+F 1 "+12V" H 5365 3223 50  0000 C CNN
+F 2 "" H 5350 3050 50  0000 C CNN
+F 3 "" H 5350 3050 50  0000 C CNN
+	1    5350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L HUA-rescue:RELAY_HJR-3FF_Z-w_relay RLY2
+U 1 1 5AE1CF68
+P 1800 5000
+F 0 "RLY2" V 2150 5000 60  0000 R CNN
+F 1 "RELAY_HJR-3FF_Z" V 1747 4809 60  0001 R CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 1800 5000 60  0001 C CNN
+F 3 "" H 1800 5000 60  0000 C CNN
+	1    1800 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L HUA-rescue:BC546-transistors Q2
+U 1 1 5AE1CF6E
+P 1550 5500
+F 0 "Q2" H 1741 5546 50  0000 L CNN
+F 1 "BC546" H 1741 5455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1741 5455 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1741 5409 50  0001 L CNN
+	1    1550 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R2
+U 1 1 5AE1CF74
+P 1100 5500
+F 0 "R2" V 1000 5500 50  0000 C CNN
+F 1 "1k" V 1100 5500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1030 5500 50  0001 C CNN
+F 3 "" H 1100 5500 50  0000 C CNN
+	1    1100 5500
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	1650 4800 1650 4750
 Wire Wire Line
-	1650 4800 1650 4850
-Connection ~ 1650 4800
+	1650 4750 1450 4750
+Wire Wire Line
+	1450 4750 1450 4900
+Connection ~ 1650 4750
+Wire Wire Line
+	1650 4750 1650 4700
+Wire Wire Line
+	1450 5200 1450 5250
+Wire Wire Line
+	1450 5250 1650 5250
+Wire Wire Line
+	1650 5250 1650 5200
+Wire Wire Line
+	1650 5250 1650 5300
+Connection ~ 1650 5250
 $Comp
-L conn:CONN_01X02 P?
-U 1 1 5AD40F91
-P 2300 4300
-F 0 "P?" H 2250 4150 50  0000 L CNN
-F 1 "EXT_V1" V 2400 4200 50  0000 L CNN
-F 2 "" H 2300 4300 50  0000 C CNN
-F 3 "" H 2300 4300 50  0000 C CNN
-	1    2300 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L conn:CONN_01X02 P?
-U 1 1 5AD41003
+L HUA-rescue:CONN_01X02-conn P3
+U 1 1 5AE1CF8A
 P 2300 4750
-F 0 "P?" H 2250 4600 50  0000 L CNN
-F 1 "VALV_1" V 2400 4550 50  0000 L CNN
-F 2 "" H 2300 4750 50  0000 C CNN
+F 0 "P3" H 2250 4600 50  0000 L CNN
+F 1 "EXT_RL1" V 2400 4650 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2300 4750 50  0001 C CNN
 F 3 "" H 2300 4750 50  0000 C CNN
 	1    2300 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 4350 2050 4350
-Wire Wire Line
-	2050 4350 2050 4700
-Wire Wire Line
-	2050 4700 2100 4700
-Wire Wire Line
-	2100 4250 1850 4250
-Wire Wire Line
-	1850 4250 1850 4350
-Wire Wire Line
-	2100 4800 1900 4800
-Wire Wire Line
-	1900 4800 1900 4750
-NoConn ~ 1950 4350
 $Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5AD5A128
-P 1500 5400
-F 0 "#PWR?" H 1500 5150 50  0001 C CNN
-F 1 "GND" H 1505 5227 50  0000 C CNN
-F 2 "" H 1500 5400 50  0000 C CNN
-F 3 "" H 1500 5400 50  0000 C CNN
-	1    1500 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:C_Small C?
-U 1 1 5AD5A44F
-P 1300 5200
-F 0 "C?" H 1100 5200 50  0000 L CNN
-F 1 "100n" H 1050 5100 50  0000 L CNN
-F 2 "" H 1300 5200 50  0000 C CNN
-F 3 "" H 1300 5200 50  0000 C CNN
-	1    1300 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 5100 1300 5050
-Wire Wire Line
-	1300 5050 1350 5050
-Wire Wire Line
-	1250 5050 1300 5050
-Connection ~ 1300 5050
-Wire Wire Line
-	1300 5300 1300 5350
-Wire Wire Line
-	1300 5350 1500 5350
-Wire Wire Line
-	1500 5350 1500 5400
-Wire Wire Line
-	1500 5350 1650 5350
-Wire Wire Line
-	1650 5350 1650 5250
-Connection ~ 1500 5350
-Text GLabel 950  5050 0    50   Input ~ 0
-VALV1
-$Comp
-L power:+12V #PWR?
-U 1 1 5AD6F969
-P 1650 4250
-F 0 "#PWR?" H 1650 4100 50  0001 C CNN
-F 1 "+12V" H 1665 4423 50  0000 C CNN
-F 2 "" H 1650 4250 50  0000 C CNN
-F 3 "" H 1650 4250 50  0000 C CNN
-	1    1650 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L w_relay:RELAY_HJR-3FF_Z RLY?
-U 1 1 5AD701A8
-P 3650 4550
-F 0 "RLY?" V 4000 4550 60  0000 R CNN
-F 1 "RELAY_HJR-3FF_Z" V 3597 4359 60  0001 R CNN
-F 2 "" H 3650 4550 60  0000 C CNN
-F 3 "" H 3650 4550 60  0000 C CNN
-	1    3650 4550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L transistors:BC546 Q?
-U 1 1 5AD701AE
-P 3400 5050
-F 0 "Q?" H 3591 5096 50  0000 L CNN
-F 1 "BC546" H 3591 5005 50  0000 L CNN
-F 2 "TO-92" H 3591 5005 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3591 4959 50  0001 L CNN
-	1    3400 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R?
-U 1 1 5AD701B4
-P 2950 5050
-F 0 "R?" V 2850 5050 50  0000 C CNN
-F 1 "2k7" V 2950 5050 50  0000 C CNN
-F 2 "" V 2880 5050 50  0000 C CNN
-F 3 "" H 2950 5050 50  0000 C CNN
-	1    2950 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L device:D D?
-U 1 1 5AD701BA
-P 3300 4600
-F 0 "D?" V 3250 4450 50  0000 L CNN
-F 1 "D" V 3350 4450 50  0000 L CNN
-F 2 "" H 3300 4600 50  0000 C CNN
-F 3 "" H 3300 4600 50  0000 C CNN
-	1    3300 4600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3500 4350 3500 4300
-Wire Wire Line
-	3500 4300 3300 4300
-Wire Wire Line
-	3300 4300 3300 4450
-Connection ~ 3500 4300
-Wire Wire Line
-	3500 4300 3500 4250
-Wire Wire Line
-	3300 4750 3300 4800
-Wire Wire Line
-	3300 4800 3500 4800
-Wire Wire Line
-	3500 4800 3500 4750
-Wire Wire Line
-	3500 4800 3500 4850
-Connection ~ 3500 4800
-$Comp
-L conn:CONN_01X02 P?
-U 1 1 5AD701CA
-P 4150 4300
-F 0 "P?" H 4100 4150 50  0000 L CNN
-F 1 "EXT_V2" V 4250 4200 50  0000 L CNN
-F 2 "" H 4150 4300 50  0000 C CNN
-F 3 "" H 4150 4300 50  0000 C CNN
-	1    4150 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L conn:CONN_01X02 P?
-U 1 1 5AD701D0
-P 4150 4750
-F 0 "P?" H 4100 4600 50  0000 L CNN
-F 1 "VALV_2" V 4250 4550 50  0000 L CNN
-F 2 "" H 4150 4750 50  0000 C CNN
-F 3 "" H 4150 4750 50  0000 C CNN
-	1    4150 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 4350 3900 4350
-Wire Wire Line
-	3900 4350 3900 4700
-Wire Wire Line
-	3900 4700 3950 4700
-Wire Wire Line
-	3950 4250 3700 4250
-Wire Wire Line
-	3700 4250 3700 4350
-Wire Wire Line
-	3950 4800 3750 4800
-Wire Wire Line
-	3750 4800 3750 4750
-NoConn ~ 3800 4350
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5AD701DE
-P 3350 5400
-F 0 "#PWR?" H 3350 5150 50  0001 C CNN
-F 1 "GND" H 3355 5227 50  0000 C CNN
-F 2 "" H 3350 5400 50  0000 C CNN
-F 3 "" H 3350 5400 50  0000 C CNN
-	1    3350 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:C_Small C?
-U 1 1 5AD701E4
-P 3150 5200
-F 0 "C?" H 2950 5200 50  0000 L CNN
-F 1 "100n" H 2900 5100 50  0000 L CNN
-F 2 "" H 3150 5200 50  0000 C CNN
-F 3 "" H 3150 5200 50  0000 C CNN
-	1    3150 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 5100 3150 5050
-Wire Wire Line
-	3150 5050 3200 5050
-Wire Wire Line
-	3100 5050 3150 5050
-Connection ~ 3150 5050
-Wire Wire Line
-	3150 5300 3150 5350
-Wire Wire Line
-	3150 5350 3350 5350
-Wire Wire Line
-	3350 5350 3350 5400
-Wire Wire Line
-	3350 5350 3500 5350
-Wire Wire Line
-	3500 5350 3500 5250
-Connection ~ 3350 5350
-Text GLabel 2800 5050 0    50   Input ~ 0
-VALV2
-$Comp
-L power:+12V #PWR?
-U 1 1 5AD701F5
-P 3500 4250
-F 0 "#PWR?" H 3500 4100 50  0001 C CNN
-F 1 "+12V" H 3515 4423 50  0000 C CNN
-F 2 "" H 3500 4250 50  0000 C CNN
-F 3 "" H 3500 4250 50  0000 C CNN
-	1    3500 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L w_relay:RELAY_HJR-3FF_Z RLY?
-U 1 1 5AD76657
-P 5500 4550
-F 0 "RLY?" V 5850 4550 60  0000 R CNN
-F 1 "RELAY_HJR-3FF_Z" V 5447 4359 60  0001 R CNN
-F 2 "" H 5500 4550 60  0000 C CNN
-F 3 "" H 5500 4550 60  0000 C CNN
-	1    5500 4550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L transistors:BC546 Q?
-U 1 1 5AD7665D
-P 5250 5050
-F 0 "Q?" H 5441 5096 50  0000 L CNN
-F 1 "BC546" H 5441 5005 50  0000 L CNN
-F 2 "TO-92" H 5441 5005 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5441 4959 50  0001 L CNN
-	1    5250 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R?
-U 1 1 5AD76663
-P 4800 5050
-F 0 "R?" V 4700 5050 50  0000 C CNN
-F 1 "2k7" V 4800 5050 50  0000 C CNN
-F 2 "" V 4730 5050 50  0000 C CNN
-F 3 "" H 4800 5050 50  0000 C CNN
-	1    4800 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L device:D D?
-U 1 1 5AD76669
-P 5150 4600
-F 0 "D?" V 4950 4600 50  0000 L CNN
-F 1 "1N4001" H 5000 4500 50  0000 L CNN
-F 2 "" H 5150 4600 50  0000 C CNN
-F 3 "" H 5150 4600 50  0000 C CNN
-	1    5150 4600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5350 4350 5350 4300
-Wire Wire Line
-	5350 4300 5150 4300
-Wire Wire Line
-	5150 4300 5150 4450
-Connection ~ 5350 4300
-Wire Wire Line
-	5350 4300 5350 4250
-Wire Wire Line
-	5150 4750 5150 4800
-Wire Wire Line
-	5150 4800 5350 4800
-Wire Wire Line
-	5350 4800 5350 4750
-Wire Wire Line
-	5350 4800 5350 4850
-Connection ~ 5350 4800
-$Comp
-L conn:CONN_01X02 P?
-U 1 1 5AD76679
-P 6000 4300
-F 0 "P?" H 5950 4150 50  0000 L CNN
-F 1 "EXT_V3" V 6100 4200 50  0000 L CNN
-F 2 "" H 6000 4300 50  0000 C CNN
-F 3 "" H 6000 4300 50  0000 C CNN
-	1    6000 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L conn:CONN_01X02 P?
-U 1 1 5AD7667F
-P 6000 4750
-F 0 "P?" H 5950 4600 50  0000 L CNN
-F 1 "VALV_3" V 6100 4550 50  0000 L CNN
-F 2 "" H 6000 4750 50  0000 C CNN
-F 3 "" H 6000 4750 50  0000 C CNN
-	1    6000 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 4350 5750 4350
-Wire Wire Line
-	5750 4350 5750 4700
-Wire Wire Line
-	5750 4700 5800 4700
-Wire Wire Line
-	5800 4250 5550 4250
-Wire Wire Line
-	5550 4250 5550 4350
-Wire Wire Line
-	5800 4800 5600 4800
-Wire Wire Line
-	5600 4800 5600 4750
-NoConn ~ 5650 4350
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5AD7668D
-P 5200 5400
-F 0 "#PWR?" H 5200 5150 50  0001 C CNN
-F 1 "GND" H 5205 5227 50  0000 C CNN
-F 2 "" H 5200 5400 50  0000 C CNN
-F 3 "" H 5200 5400 50  0000 C CNN
-	1    5200 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:C_Small C?
-U 1 1 5AD76693
-P 5000 5200
-F 0 "C?" H 4800 5200 50  0000 L CNN
-F 1 "100n" H 4750 5100 50  0000 L CNN
-F 2 "" H 5000 5200 50  0000 C CNN
-F 3 "" H 5000 5200 50  0000 C CNN
-	1    5000 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 5100 5000 5050
-Wire Wire Line
-	5000 5050 5050 5050
-Wire Wire Line
-	4950 5050 5000 5050
-Connection ~ 5000 5050
-Wire Wire Line
-	5000 5300 5000 5350
-Wire Wire Line
-	5000 5350 5200 5350
-Wire Wire Line
-	5200 5350 5200 5400
-Wire Wire Line
-	5200 5350 5350 5350
-Wire Wire Line
-	5350 5350 5350 5250
-Connection ~ 5200 5350
-Text GLabel 4650 5050 0    50   Input ~ 0
-VALV3
-$Comp
-L power:+12V #PWR?
-U 1 1 5AD766A4
-P 5350 4250
-F 0 "#PWR?" H 5350 4100 50  0001 C CNN
-F 1 "+12V" H 5365 4423 50  0000 C CNN
-F 2 "" H 5350 4250 50  0000 C CNN
-F 3 "" H 5350 4250 50  0000 C CNN
-	1    5350 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L w_relay:RELAY_HJR-3FF_Z RLY?
-U 1 1 5AE1CF68
-P 1800 6200
-F 0 "RLY?" V 2150 6200 60  0000 R CNN
-F 1 "RELAY_HJR-3FF_Z" V 1747 6009 60  0001 R CNN
-F 2 "" H 1800 6200 60  0000 C CNN
-F 3 "" H 1800 6200 60  0000 C CNN
-	1    1800 6200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L transistors:BC546 Q?
-U 1 1 5AE1CF6E
-P 1550 6700
-F 0 "Q?" H 1741 6746 50  0000 L CNN
-F 1 "BC546" H 1741 6655 50  0000 L CNN
-F 2 "TO-92" H 1741 6655 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1741 6609 50  0001 L CNN
-	1    1550 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R?
-U 1 1 5AE1CF74
-P 1100 6700
-F 0 "R?" V 1000 6700 50  0000 C CNN
-F 1 "2k7" V 1100 6700 50  0000 C CNN
-F 2 "" V 1030 6700 50  0000 C CNN
-F 3 "" H 1100 6700 50  0000 C CNN
-	1    1100 6700
-	0    1    1    0   
-$EndComp
-$Comp
-L device:D D?
-U 1 1 5AE1CF7A
-P 1450 6250
-F 0 "D?" V 1400 6100 50  0000 L CNN
-F 1 "D" V 1550 5850 50  0001 L CNN
-F 2 "" H 1450 6250 50  0000 C CNN
-F 3 "" H 1450 6250 50  0000 C CNN
-	1    1450 6250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1650 6000 1650 5950
-Wire Wire Line
-	1650 5950 1450 5950
-Wire Wire Line
-	1450 5950 1450 6100
-Connection ~ 1650 5950
-Wire Wire Line
-	1650 5950 1650 5900
-Wire Wire Line
-	1450 6400 1450 6450
-Wire Wire Line
-	1450 6450 1650 6450
-Wire Wire Line
-	1650 6450 1650 6400
-Wire Wire Line
-	1650 6450 1650 6500
-Connection ~ 1650 6450
-$Comp
-L conn:CONN_01X02 P?
-U 1 1 5AE1CF8A
-P 2300 5950
-F 0 "P?" H 2250 5800 50  0000 L CNN
-F 1 "EXT_V3" V 2400 5850 50  0000 L CNN
-F 2 "" H 2300 5950 50  0000 C CNN
-F 3 "" H 2300 5950 50  0000 C CNN
-	1    2300 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L conn:CONN_01X02 P?
+L HUA-rescue:CONN_01X02-conn P4
 U 1 1 5AE1CF90
-P 2300 6400
-F 0 "P?" H 2250 6250 50  0000 L CNN
-F 1 "VALV_3" V 2400 6200 50  0000 L CNN
-F 2 "" H 2300 6400 50  0000 C CNN
-F 3 "" H 2300 6400 50  0000 C CNN
-	1    2300 6400
+P 2300 5200
+F 0 "P4" H 2250 5050 50  0000 L CNN
+F 1 "RL_1" V 2400 5000 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2300 5200 50  0001 C CNN
+F 3 "" H 2300 5200 50  0000 C CNN
+	1    2300 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 6000 2050 6000
+	2100 4800 2050 4800
 Wire Wire Line
-	2050 6000 2050 6350
+	2050 4800 2050 5150
 Wire Wire Line
-	2050 6350 2100 6350
+	2050 5150 2100 5150
 Wire Wire Line
-	2100 5900 1850 5900
+	2100 4700 1850 4700
 Wire Wire Line
-	1850 5900 1850 6000
+	1850 4700 1850 4800
 Wire Wire Line
-	2100 6450 1900 6450
+	2100 5250 1900 5250
 Wire Wire Line
-	1900 6450 1900 6400
-NoConn ~ 1950 6000
+	1900 5250 1900 5200
+NoConn ~ 1950 4800
 $Comp
-L ElectricKettle-rescue:GND #PWR?
+L HUA-rescue:GND-ElectricKettle-rescue #PWR05
 U 1 1 5AE1CF9E
-P 1500 7050
-F 0 "#PWR?" H 1500 6800 50  0001 C CNN
-F 1 "GND" H 1505 6877 50  0000 C CNN
-F 2 "" H 1500 7050 50  0000 C CNN
-F 3 "" H 1500 7050 50  0000 C CNN
-	1    1500 7050
+P 1500 5850
+F 0 "#PWR05" H 1500 5600 50  0001 C CNN
+F 1 "GND" H 1505 5677 50  0000 C CNN
+F 2 "" H 1500 5850 50  0000 C CNN
+F 3 "" H 1500 5850 50  0000 C CNN
+	1    1500 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C?
+L device:C_Small C2
 U 1 1 5AE1CFA4
-P 1300 6850
-F 0 "C?" H 1100 6850 50  0000 L CNN
-F 1 "100n" H 1050 6750 50  0000 L CNN
-F 2 "" H 1300 6850 50  0000 C CNN
-F 3 "" H 1300 6850 50  0000 C CNN
-	1    1300 6850
+P 1300 5650
+F 0 "C2" H 1100 5650 50  0000 L CNN
+F 1 "100n" H 1050 5550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 1300 5650 50  0001 C CNN
+F 3 "" H 1300 5650 50  0000 C CNN
+	1    1300 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 6750 1300 6700
+	1300 5550 1300 5500
 Wire Wire Line
-	1300 6700 1350 6700
+	1300 5500 1350 5500
 Wire Wire Line
-	1250 6700 1300 6700
-Connection ~ 1300 6700
+	1250 5500 1300 5500
+Connection ~ 1300 5500
 Wire Wire Line
-	1300 6950 1300 7000
+	1300 5750 1300 5800
 Wire Wire Line
-	1300 7000 1500 7000
+	1300 5800 1500 5800
 Wire Wire Line
-	1500 7000 1500 7050
+	1500 5800 1500 5850
 Wire Wire Line
-	1500 7000 1650 7000
+	1500 5800 1650 5800
 Wire Wire Line
-	1650 7000 1650 6900
-Connection ~ 1500 7000
-Text GLabel 950  6700 0    50   Input ~ 0
+	1650 5800 1650 5700
+Connection ~ 1500 5800
+Text GLabel 950  5500 0    50   Input ~ 0
 RL1
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR07
 U 1 1 5AE1CFB5
-P 1650 5900
-F 0 "#PWR?" H 1650 5750 50  0001 C CNN
-F 1 "+12V" H 1665 6073 50  0000 C CNN
-F 2 "" H 1650 5900 50  0000 C CNN
-F 3 "" H 1650 5900 50  0000 C CNN
-	1    1650 5900
+P 1650 4700
+F 0 "#PWR07" H 1650 4550 50  0001 C CNN
+F 1 "+12V" H 1665 4873 50  0000 C CNN
+F 2 "" H 1650 4700 50  0000 C CNN
+F 3 "" H 1650 4700 50  0000 C CNN
+	1    1650 4700
 	1    0    0    -1  
 $EndComp
 $Comp
-L w_relay:RELAY_HJR-3FF_Z RLY?
+L HUA-rescue:RELAY_HJR-3FF_Z-w_relay RLY4
 U 1 1 5AE270DF
-P 5450 6200
-F 0 "RLY?" V 5800 6200 60  0000 R CNN
-F 1 "RELAY_HJR-3FF_Z" V 5397 6009 60  0001 R CNN
-F 2 "" H 5450 6200 60  0000 C CNN
-F 3 "" H 5450 6200 60  0000 C CNN
-	1    5450 6200
+P 5450 5000
+F 0 "RLY4" V 5800 5000 60  0000 R CNN
+F 1 "RELAY_HJR-3FF_Z" V 5397 4809 60  0001 R CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 5450 5000 60  0001 C CNN
+F 3 "" H 5450 5000 60  0000 C CNN
+	1    5450 5000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L transistors:BC546 Q?
+L HUA-rescue:BC546-transistors Q4
 U 1 1 5AE270E5
-P 5200 6700
-F 0 "Q?" H 5391 6746 50  0000 L CNN
-F 1 "BC546" H 5391 6655 50  0000 L CNN
-F 2 "TO-92" H 5391 6655 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5391 6609 50  0001 L CNN
-	1    5200 6700
+P 5200 5500
+F 0 "Q4" H 5391 5546 50  0000 L CNN
+F 1 "BC546" H 5391 5455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5391 5455 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5391 5409 50  0001 L CNN
+	1    5200 5500
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
+L device:R R8
 U 1 1 5AE270EB
-P 4750 6700
-F 0 "R?" V 4650 6700 50  0000 C CNN
-F 1 "2k7" V 4750 6700 50  0000 C CNN
-F 2 "" V 4680 6700 50  0000 C CNN
-F 3 "" H 4750 6700 50  0000 C CNN
-	1    4750 6700
-	0    1    1    0   
-$EndComp
-$Comp
-L device:D D?
-U 1 1 5AE270F1
-P 5100 6250
-F 0 "D?" V 5050 6100 50  0000 L CNN
-F 1 "D" V 5150 6100 50  0000 L CNN
-F 2 "" H 5100 6250 50  0000 C CNN
-F 3 "" H 5100 6250 50  0000 C CNN
-	1    5100 6250
+P 4750 5500
+F 0 "R8" V 4650 5500 50  0000 C CNN
+F 1 "1k" V 4750 5500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4680 5500 50  0001 C CNN
+F 3 "" H 4750 5500 50  0000 C CNN
+	1    4750 5500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5300 6000 5300 5950
+	5300 4800 5300 4750
 Wire Wire Line
-	5300 5950 5100 5950
+	5300 4750 5100 4750
 Wire Wire Line
-	5100 5950 5100 6100
-Connection ~ 5300 5950
+	5100 4750 5100 4900
+Connection ~ 5300 4750
 Wire Wire Line
-	5300 5950 5300 5900
+	5300 4750 5300 4700
 Wire Wire Line
-	5100 6400 5100 6450
+	5100 5200 5100 5250
 Wire Wire Line
-	5100 6450 5300 6450
+	5100 5250 5300 5250
 Wire Wire Line
-	5300 6450 5300 6400
+	5300 5250 5300 5200
 Wire Wire Line
-	5300 6450 5300 6500
-Connection ~ 5300 6450
+	5300 5250 5300 5300
+Connection ~ 5300 5250
 $Comp
-L conn:CONN_01X02 P?
+L HUA-rescue:CONN_01X02-conn P7
 U 1 1 5AE27101
-P 5950 5950
-F 0 "P?" H 5900 5800 50  0000 L CNN
-F 1 "EXT_V3" V 6050 5850 50  0000 L CNN
-F 2 "" H 5950 5950 50  0000 C CNN
-F 3 "" H 5950 5950 50  0000 C CNN
-	1    5950 5950
+P 5950 4750
+F 0 "P7" H 5900 4600 50  0000 L CNN
+F 1 "EXT_RL2" V 6050 4650 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5950 4750 50  0001 C CNN
+F 3 "" H 5950 4750 50  0000 C CNN
+	1    5950 4750
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_01X02 P?
+L HUA-rescue:CONN_01X02-conn P8
 U 1 1 5AE27107
-P 5950 6400
-F 0 "P?" H 5900 6250 50  0000 L CNN
-F 1 "VALV_3" V 6050 6200 50  0000 L CNN
-F 2 "" H 5950 6400 50  0000 C CNN
-F 3 "" H 5950 6400 50  0000 C CNN
-	1    5950 6400
+P 5950 5200
+F 0 "P8" H 5900 5050 50  0000 L CNN
+F 1 "RL_2" V 6050 5000 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5950 5200 50  0001 C CNN
+F 3 "" H 5950 5200 50  0000 C CNN
+	1    5950 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 6000 5700 6000
+	5750 4800 5700 4800
 Wire Wire Line
-	5700 6000 5700 6350
+	5700 4800 5700 5150
 Wire Wire Line
-	5700 6350 5750 6350
+	5700 5150 5750 5150
 Wire Wire Line
-	5750 5900 5500 5900
+	5750 4700 5500 4700
 Wire Wire Line
-	5500 5900 5500 6000
+	5500 4700 5500 4800
 Wire Wire Line
-	5750 6450 5550 6450
+	5750 5250 5550 5250
 Wire Wire Line
-	5550 6450 5550 6400
-NoConn ~ 5600 6000
+	5550 5250 5550 5200
+NoConn ~ 5600 4800
 $Comp
-L ElectricKettle-rescue:GND #PWR?
+L HUA-rescue:GND-ElectricKettle-rescue #PWR015
 U 1 1 5AE27115
-P 5150 7050
-F 0 "#PWR?" H 5150 6800 50  0001 C CNN
-F 1 "GND" H 5155 6877 50  0000 C CNN
-F 2 "" H 5150 7050 50  0000 C CNN
-F 3 "" H 5150 7050 50  0000 C CNN
-	1    5150 7050
+P 5150 5850
+F 0 "#PWR015" H 5150 5600 50  0001 C CNN
+F 1 "GND" H 5155 5677 50  0000 C CNN
+F 2 "" H 5150 5850 50  0000 C CNN
+F 3 "" H 5150 5850 50  0000 C CNN
+	1    5150 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C?
+L device:C_Small C7
 U 1 1 5AE2711B
-P 4950 6850
-F 0 "C?" H 4750 6850 50  0000 L CNN
-F 1 "100n" H 4700 6750 50  0000 L CNN
-F 2 "" H 4950 6850 50  0000 C CNN
-F 3 "" H 4950 6850 50  0000 C CNN
-	1    4950 6850
+P 4950 5650
+F 0 "C7" H 4750 5650 50  0000 L CNN
+F 1 "100n" H 4700 5550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 4950 5650 50  0001 C CNN
+F 3 "" H 4950 5650 50  0000 C CNN
+	1    4950 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 6750 4950 6700
+	4950 5550 4950 5500
 Wire Wire Line
-	4950 6700 5000 6700
+	4950 5500 5000 5500
 Wire Wire Line
-	4900 6700 4950 6700
-Connection ~ 4950 6700
+	4900 5500 4950 5500
+Connection ~ 4950 5500
 Wire Wire Line
-	4950 6950 4950 7000
+	4950 5750 4950 5800
 Wire Wire Line
-	4950 7000 5150 7000
+	4950 5800 5150 5800
 Wire Wire Line
-	5150 7000 5150 7050
+	5150 5800 5150 5850
 Wire Wire Line
-	5150 7000 5300 7000
+	5150 5800 5300 5800
 Wire Wire Line
-	5300 7000 5300 6900
-Connection ~ 5150 7000
-Text GLabel 4600 6700 0    50   Input ~ 0
+	5300 5800 5300 5700
+Connection ~ 5150 5800
+Text GLabel 4600 5500 0    50   Input ~ 0
 RL2
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR017
 U 1 1 5AE2712C
-P 5300 5900
-F 0 "#PWR?" H 5300 5750 50  0001 C CNN
-F 1 "+12V" H 5315 6073 50  0000 C CNN
-F 2 "" H 5300 5900 50  0000 C CNN
-F 3 "" H 5300 5900 50  0000 C CNN
-	1    5300 5900
+P 5300 4700
+F 0 "#PWR017" H 5300 4550 50  0001 C CNN
+F 1 "+12V" H 5315 4873 50  0000 C CNN
+F 2 "" H 5300 4700 50  0000 C CNN
+F 3 "" H 5300 4700 50  0000 C CNN
+	1    5300 4700
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_Small R?
+L HUA-rescue:R_Small-device R4
 U 1 1 5AE342FF
-P 1200 6100
-F 0 "R?" H 1050 6150 50  0000 L CNN
-F 1 "2k7" H 1000 6050 50  0000 L CNN
-F 2 "" H 1200 6100 50  0000 C CNN
-F 3 "" H 1200 6100 50  0000 C CNN
-	1    1200 6100
+P 1200 4900
+F 0 "R4" H 1050 4950 50  0000 L CNN
+F 1 "2k7" H 1000 4850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1200 4900 50  0001 C CNN
+F 3 "" H 1200 4900 50  0000 C CNN
+	1    1200 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Led_Small D?
+L device:LED_Small D2
 U 1 1 5AE344FB
-P 1200 6300
-F 0 "D?" V 1200 6500 50  0000 R CNN
-F 1 "3mm" V 1100 6500 50  0000 R CNN
-F 2 "" V 1200 6300 50  0000 C CNN
-F 3 "" V 1200 6300 50  0000 C CNN
-	1    1200 6300
+P 1200 5100
+F 0 "D2" V 1200 5300 50  0000 R CNN
+F 1 "3mm" V 1100 5300 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_Clear" V 1200 5100 50  0001 C CNN
+F 3 "" V 1200 5100 50  0000 C CNN
+	1    1200 5100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1200 6000 1200 5950
+	1200 4800 1200 4750
 Wire Wire Line
-	1200 5950 1450 5950
-Connection ~ 1450 5950
+	1200 4750 1450 4750
+Connection ~ 1450 4750
 Wire Wire Line
-	1200 6400 1200 6450
+	1200 5200 1200 5250
 Wire Wire Line
-	1200 6450 1450 6450
-Connection ~ 1450 6450
+	1200 5250 1450 5250
+Connection ~ 1450 5250
 $Comp
-L device:R_Small R?
+L HUA-rescue:R_Small-device R10
 U 1 1 5AE4E527
-P 4850 6100
-F 0 "R?" H 4700 6150 50  0000 L CNN
-F 1 "2k7" H 4650 6050 50  0000 L CNN
-F 2 "" H 4850 6100 50  0000 C CNN
-F 3 "" H 4850 6100 50  0000 C CNN
-	1    4850 6100
+P 4850 4900
+F 0 "R10" H 4700 4950 50  0000 L CNN
+F 1 "2k7" H 4650 4850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4850 4900 50  0001 C CNN
+F 3 "" H 4850 4900 50  0000 C CNN
+	1    4850 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Led_Small D?
+L device:LED_Small D8
 U 1 1 5AE4E52D
-P 4850 6300
-F 0 "D?" V 4850 6500 50  0000 R CNN
-F 1 "3mm" V 4750 6500 50  0000 R CNN
-F 2 "" V 4850 6300 50  0000 C CNN
-F 3 "" V 4850 6300 50  0000 C CNN
-	1    4850 6300
+P 4850 5100
+F 0 "D8" V 4850 5300 50  0000 R CNN
+F 1 "3mm" V 4750 5300 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_Clear" V 4850 5100 50  0001 C CNN
+F 3 "" V 4850 5100 50  0000 C CNN
+	1    4850 5100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4850 6000 4850 5950
+	4850 4800 4850 4750
 Wire Wire Line
-	4850 5950 5100 5950
+	4850 4750 5100 4750
 Wire Wire Line
-	4850 6400 4850 6450
+	4850 5200 4850 5250
 Wire Wire Line
-	4850 6450 5100 6450
-Connection ~ 5100 5950
-Connection ~ 5100 6450
+	4850 5250 5100 5250
+Connection ~ 5100 4750
+Connection ~ 5100 5250
 $Comp
-L device:R_Small R?
+L HUA-rescue:R_Small-device R3
 U 1 1 5AE5BF38
-P 1200 4450
-F 0 "R?" H 1050 4500 50  0000 L CNN
-F 1 "2k7" H 1000 4400 50  0000 L CNN
-F 2 "" H 1200 4450 50  0000 C CNN
-F 3 "" H 1200 4450 50  0000 C CNN
-	1    1200 4450
+P 1200 3250
+F 0 "R3" H 1050 3300 50  0000 L CNN
+F 1 "2k7" H 1000 3200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1200 3250 50  0001 C CNN
+F 3 "" H 1200 3250 50  0000 C CNN
+	1    1200 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Led_Small D?
+L device:LED_Small D1
 U 1 1 5AE5BF3E
-P 1200 4650
-F 0 "D?" V 1200 4850 50  0000 R CNN
-F 1 "3mm" V 1100 4900 50  0000 R CNN
-F 2 "" V 1200 4650 50  0000 C CNN
-F 3 "" V 1200 4650 50  0000 C CNN
-	1    1200 4650
+P 1200 3450
+F 0 "D1" V 1200 3650 50  0000 R CNN
+F 1 "3mm" V 1100 3700 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_Clear" V 1200 3450 50  0001 C CNN
+F 3 "" V 1200 3450 50  0000 C CNN
+	1    1200 3450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1200 4350 1200 4300
+	1200 3150 1200 3100
 Wire Wire Line
-	1200 4300 1450 4300
+	1200 3100 1450 3100
 Wire Wire Line
-	1200 4750 1200 4800
+	1200 3550 1200 3600
 Wire Wire Line
-	1200 4800 1450 4800
-Connection ~ 1450 4300
-Connection ~ 1450 4800
+	1200 3600 1450 3600
+Connection ~ 1450 3100
+Connection ~ 1450 3600
 $Comp
-L device:R_Small R?
+L HUA-rescue:R_Small-device R7
 U 1 1 5AE69FA1
-P 3050 4450
-F 0 "R?" H 2900 4500 50  0000 L CNN
-F 1 "2k7" H 2850 4400 50  0000 L CNN
-F 2 "" H 3050 4450 50  0000 C CNN
-F 3 "" H 3050 4450 50  0000 C CNN
-	1    3050 4450
+P 3050 3250
+F 0 "R7" H 2900 3300 50  0000 L CNN
+F 1 "2k7" H 2850 3200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3050 3250 50  0001 C CNN
+F 3 "" H 3050 3250 50  0000 C CNN
+	1    3050 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Led_Small D?
+L device:LED_Small D6
 U 1 1 5AE69FA7
-P 3050 4650
-F 0 "D?" V 3050 4850 50  0000 R CNN
-F 1 "3mm" V 2950 4850 50  0000 R CNN
-F 2 "" V 3050 4650 50  0000 C CNN
-F 3 "" V 3050 4650 50  0000 C CNN
-	1    3050 4650
+P 3050 3450
+F 0 "D6" V 3050 3650 50  0000 R CNN
+F 1 "3mm" V 2950 3650 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_Clear" V 3050 3450 50  0001 C CNN
+F 3 "" V 3050 3450 50  0000 C CNN
+	1    3050 3450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3050 4350 3050 4300
+	3050 3150 3050 3100
 Wire Wire Line
-	3050 4300 3300 4300
+	3050 3100 3300 3100
 Wire Wire Line
-	3050 4750 3050 4800
+	3050 3550 3050 3600
 Wire Wire Line
-	3050 4800 3300 4800
-Connection ~ 3300 4300
-Connection ~ 3300 4800
+	3050 3600 3300 3600
+Connection ~ 3300 3100
+Connection ~ 3300 3600
 $Comp
-L device:R_Small R?
+L HUA-rescue:R_Small-device R11
 U 1 1 5AE78813
-P 4900 4450
-F 0 "R?" H 4750 4500 50  0000 L CNN
-F 1 "2k7" H 4700 4400 50  0000 L CNN
-F 2 "" H 4900 4450 50  0000 C CNN
-F 3 "" H 4900 4450 50  0000 C CNN
-	1    4900 4450
+P 4900 3250
+F 0 "R11" H 4750 3300 50  0000 L CNN
+F 1 "2k7" H 4700 3200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4900 3250 50  0001 C CNN
+F 3 "" H 4900 3250 50  0000 C CNN
+	1    4900 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Led_Small D?
+L device:LED_Small D9
 U 1 1 5AE78819
-P 4900 4650
-F 0 "D?" V 4900 4850 50  0000 R CNN
-F 1 "3mm" V 4800 4850 50  0000 R CNN
-F 2 "" V 4900 4650 50  0000 C CNN
-F 3 "" V 4900 4650 50  0000 C CNN
-	1    4900 4650
+P 4900 3450
+F 0 "D9" V 4900 3650 50  0000 R CNN
+F 1 "3mm" V 4800 3650 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm_Clear" V 4900 3450 50  0001 C CNN
+F 3 "" V 4900 3450 50  0000 C CNN
+	1    4900 3450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4900 4350 4900 4300
+	4900 3150 4900 3100
 Wire Wire Line
-	4900 4300 5150 4300
+	4900 3100 5150 3100
 Wire Wire Line
-	4900 4750 4900 4800
+	4900 3550 4900 3600
 Wire Wire Line
-	4900 4800 5150 4800
-Connection ~ 5150 4300
-Connection ~ 5150 4800
+	4900 3600 5150 3600
+Connection ~ 5150 3100
+Connection ~ 5150 3600
 Wire Notes Line
-	6250 7350 600  7350
+	6250 6150 600  6150
 Wire Notes Line
-	600  7350 600  3950
+	600  6150 600  2750
 Wire Notes Line
-	600  3950 6250 3950
+	600  2750 6250 2750
 Wire Notes Line
-	6250 3950 6250 7350
-Text Notes 2250 7200 0    79   ~ 0
-     RELAY ACTUATOR MODULES\n3 FOR WATER VALVES AND 2 EXTRA\n
+	6250 2750 6250 6150
+Text Notes 2000 6050 0    79   ~ 0
+         RELAY ACTUATOR MODULES\n3 FOR WATER VALVES AND 2 EXTRA FOR LIGHTS\n
+Text Notes 7350 5150 0    50   ~ 0
+                       SENSOR MODULES\nLIGHT, 3x SOIL HUMIDITY AND ENVIRONMENT TEMP AND HUMIDITY
 $Comp
-L conn:CONN_01X03 P?
-U 1 1 5AEE7996
-P 7550 4000
-F 0 "P?" H 7500 4200 50  0000 L CNN
-F 1 "FLUX_SENSOR" V 7650 3800 50  0000 L CNN
-F 2 "" H 7550 4000 50  0000 C CNN
-F 3 "" H 7550 4000 50  0000 C CNN
-	1    7550 4000
+L nodemcu:NodeMCU_Amica_R2 U1
+U 1 1 5C07EAA7
+P 1450 1550
+F 0 "U1" H 1450 2475 50  0000 C CNN
+F 1 "NodeMCU_Amica_R2" H 1450 2384 50  0000 C CNN
+F 2 "nodemcu:NodeMCU_Amica_R2" H 1700 1550 50  0001 C CNN
+F 3 "" H 1700 1550 50  0000 C CNN
+	1    1450 1550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	950  2300 950  2250
+Wire Wire Line
+	950  2250 1000 2250
+Text GLabel 8000 4050 0    47   Input ~ 0
+HUM1_IN
 $Comp
-L device:R_Small R?
-U 1 1 5AEE81C6
-P 7200 3650
-F 0 "R?" H 7050 3700 50  0000 L CNN
-F 1 "2k7" H 7000 3600 50  0000 L CNN
-F 2 "" H 7200 3650 50  0000 C CNN
-F 3 "" H 7200 3650 50  0000 C CNN
-	1    7200 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:Led_Small D?
-U 1 1 5AEE81CC
-P 7200 3850
-F 0 "D?" V 7200 4050 50  0000 R CNN
-F 1 "3mm" V 7100 4050 50  0000 R CNN
-F 2 "" V 7200 3850 50  0000 C CNN
-F 3 "" V 7200 3850 50  0000 C CNN
-	1    7200 3850
+L power:+3V3 #PWR02
+U 1 1 5C163A2E
+P 1000 1850
+F 0 "#PWR02" H 1000 1700 50  0001 C CNN
+F 1 "+3V3" V 1015 1978 50  0000 L CNN
+F 2 "" H 1000 1850 50  0001 C CNN
+F 3 "" H 1000 1850 50  0001 C CNN
+	1    1000 1850
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R?
-U 1 1 5AF06579
-P 6800 3750
-F 0 "R?" H 6870 3796 50  0000 L CNN
-F 1 "R" H 6870 3705 50  0000 L CNN
-F 2 "" V 6730 3750 50  0000 C CNN
-F 3 "" H 6800 3750 50  0000 C CNN
-	1    6800 3750
+L power:GND #PWR030
+U 1 1 5C16425E
+P 8000 4750
+F 0 "#PWR030" H 8000 4500 50  0001 C CNN
+F 1 "GND" V 8005 4622 50  0000 R CNN
+F 2 "" H 8000 4750 50  0001 C CNN
+F 3 "" H 8000 4750 50  0001 C CNN
+	1    8000 4750
+	0    1    1    0   
+$EndComp
+Text GLabel 8000 4550 0    50   BiDi ~ 0
+SDA
+Text GLabel 8000 4650 0    50   BiDi ~ 0
+SCL
+$Comp
+L power:+3V3 #PWR028
+U 1 1 5C1911A2
+P 8250 2450
+F 0 "#PWR028" H 8250 2300 50  0001 C CNN
+F 1 "+3V3" H 8250 2600 50  0000 C CNN
+F 2 "" H 8250 2450 50  0001 C CNN
+F 3 "" H 8250 2450 50  0001 C CNN
+	1    8250 2450
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
-U 1 1 5AF06655
-P 6800 4200
-F 0 "R?" H 6870 4246 50  0000 L CNN
-F 1 "R" H 6870 4155 50  0000 L CNN
-F 2 "" V 6730 4200 50  0000 C CNN
-F 3 "" H 6800 4200 50  0000 C CNN
-	1    6800 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 3900 6800 4000
-Wire Wire Line
-	7200 3950 7200 4000
-Wire Wire Line
-	7200 4000 6800 4000
-Connection ~ 6800 4000
-Wire Wire Line
-	6800 4000 6800 4050
-Wire Wire Line
-	7200 4000 7350 4000
-Connection ~ 7200 4000
-$Comp
-L ElectricKettle-rescue:+5V #PWR?
-U 1 1 5AF8125F
-P 7200 3450
-F 0 "#PWR?" H 7200 3300 50  0001 C CNN
-F 1 "+5V" H 7215 3623 50  0000 C CNN
-F 2 "" H 7200 3450 50  0000 C CNN
-F 3 "" H 7200 3450 50  0000 C CNN
-	1    7200 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 3450 7200 3500
-Wire Wire Line
-	7200 3500 7300 3500
-Wire Wire Line
-	7300 3500 7300 3900
-Wire Wire Line
-	7300 3900 7350 3900
-Connection ~ 7200 3500
-Wire Wire Line
-	7200 3500 7200 3550
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5AFB0809
-P 7300 4450
-F 0 "#PWR?" H 7300 4200 50  0001 C CNN
-F 1 "GND" H 7305 4277 50  0000 C CNN
-F 2 "" H 7300 4450 50  0000 C CNN
-F 3 "" H 7300 4450 50  0000 C CNN
-	1    7300 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 4450 7300 4400
-Wire Wire Line
-	7300 4100 7350 4100
-Wire Wire Line
-	6800 3600 6800 3500
-Wire Wire Line
-	6800 3500 7200 3500
-Wire Wire Line
-	6800 4350 6800 4400
-Wire Wire Line
-	6800 4400 7300 4400
-Connection ~ 7300 4400
-Wire Wire Line
-	7300 4400 7300 4100
-Text GLabel 6700 4000 0    50   Output ~ 0
-FLUX
-Wire Wire Line
-	6700 4000 6800 4000
-Wire Wire Line
-	8700 3700 8700 3750
-Connection ~ 8700 3750
-$Comp
-L conn:CONN_01X03 P?
-U 1 1 5B09AD7D
-P 7150 5200
-F 0 "P?" H 7050 4950 50  0000 L CNN
-F 1 "ONE_WIRE_SENSOR_1" V 7250 4800 50  0000 L CNN
-F 2 "" H 7150 5200 50  0000 C CNN
-F 3 "" H 7150 5200 50  0000 C CNN
-	1    7150 5200
+L Sensor:DHT11 U4
+U 1 1 5C1AF8C6
+P 6950 3950
+F 0 "U4" H 6720 3996 50  0000 R CNN
+F 1 "DHT22" H 6720 3905 50  0000 R CNN
+F 2 "Sensors:DHT22_Temperature_Humidity" H 7100 4200 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 7100 4200 50  0001 C CNN
+	1    6950 3950
 	1    0    0    -1  
 $EndComp
 $Comp
-L ElectricKettle-rescue:+5V #PWR?
-U 1 1 5B09B13B
-P 6900 5050
-F 0 "#PWR?" H 6900 4900 50  0001 C CNN
-F 1 "+5V" H 6915 5223 50  0000 C CNN
-F 2 "" H 6900 5050 50  0000 C CNN
-F 3 "" H 6900 5050 50  0000 C CNN
-	1    6900 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 5050 6900 5100
-Wire Wire Line
-	6900 5100 6950 5100
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5B0ABC22
-P 6900 5350
-F 0 "#PWR?" H 6900 5100 50  0001 C CNN
-F 1 "GND" H 6905 5177 50  0000 C CNN
-F 2 "" H 6900 5350 50  0000 C CNN
-F 3 "" H 6900 5350 50  0000 C CNN
-	1    6900 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 5350 6900 5300
-Wire Wire Line
-	6900 5300 6950 5300
-Text GLabel 6950 5200 0    47   BiDi ~ 0
-OW_SENSOR1
-Text GLabel 7900 5200 0    47   BiDi ~ 0
-OW_SENSOR2
-Text GLabel 8900 5200 0    47   Input ~ 0
-OW_SENSOR3
-$Comp
-L conn:CONN_01X03 P?
-U 1 1 5B0DF075
-P 8100 5200
-F 0 "P?" H 8000 5000 50  0000 L CNN
-F 1 "ONE_WIRE_SENSOR_2" V 8250 4800 50  0000 L CNN
-F 2 "" H 8100 5200 50  0000 C CNN
-F 3 "" H 8100 5200 50  0000 C CNN
-	1    8100 5200
+L device:R_PHOTO R15
+U 1 1 5C1AFBA9
+P 6850 3000
+F 0 "R15" H 6920 3046 50  0000 L CNN
+F 1 "LDR" V 6850 2900 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92-2" V 6900 2750 50  0001 L CNN
+F 3 "~" H 6850 2950 50  0001 C CNN
+	1    6850 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L ElectricKettle-rescue:+5V #PWR?
-U 1 1 5B0DF07B
-P 7850 5050
-F 0 "#PWR?" H 7850 4900 50  0001 C CNN
-F 1 "+5V" H 7865 5223 50  0000 C CNN
-F 2 "" H 7850 5050 50  0000 C CNN
-F 3 "" H 7850 5050 50  0000 C CNN
-	1    7850 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 5050 7850 5100
-Wire Wire Line
-	7850 5100 7900 5100
-$Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5B0DF083
-P 7850 5350
-F 0 "#PWR?" H 7850 5100 50  0001 C CNN
-F 1 "GND" H 7855 5177 50  0000 C CNN
-F 2 "" H 7850 5350 50  0000 C CNN
-F 3 "" H 7850 5350 50  0000 C CNN
-	1    7850 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 5350 7850 5300
-Wire Wire Line
-	7850 5300 7900 5300
-$Comp
-L conn:CONN_01X03 P?
-U 1 1 5B0F0442
-P 9100 5200
-F 0 "P?" H 9000 5000 50  0000 L CNN
-F 1 "ONE_WIRE_SENSOR_3" V 9250 4800 50  0000 L CNN
-F 2 "" H 9100 5200 50  0000 C CNN
-F 3 "" H 9100 5200 50  0000 C CNN
-	1    9100 5200
+L device:R R14
+U 1 1 5C1B000D
+P 6850 2600
+F 0 "R14" H 6920 2646 50  0000 L CNN
+F 1 "20k" V 6850 2500 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6780 2600 50  0001 C CNN
+F 3 "~" H 6850 2600 50  0001 C CNN
+	1    6850 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L ElectricKettle-rescue:+5V #PWR?
-U 1 1 5B0F0448
-P 8850 5050
-F 0 "#PWR?" H 8850 4900 50  0001 C CNN
-F 1 "+5V" H 8865 5223 50  0000 C CNN
-F 2 "" H 8850 5050 50  0000 C CNN
-F 3 "" H 8850 5050 50  0000 C CNN
-	1    8850 5050
+L power:GND #PWR024
+U 1 1 5C1B03A3
+P 6850 3150
+F 0 "#PWR024" H 6850 2900 50  0001 C CNN
+F 1 "GND" H 6855 2977 50  0000 C CNN
+F 2 "" H 6850 3150 50  0001 C CNN
+F 3 "" H 6850 3150 50  0001 C CNN
+	1    6850 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8850 5050 8850 5100
-Wire Wire Line
-	8850 5100 8900 5100
 $Comp
-L ElectricKettle-rescue:GND #PWR?
-U 1 1 5B0F0450
-P 8850 5350
-F 0 "#PWR?" H 8850 5100 50  0001 C CNN
-F 1 "GND" H 8855 5177 50  0000 C CNN
-F 2 "" H 8850 5350 50  0000 C CNN
-F 3 "" H 8850 5350 50  0000 C CNN
-	1    8850 5350
+L power:+3V3 #PWR023
+U 1 1 5C1B04F7
+P 6850 2450
+F 0 "#PWR023" H 6850 2300 50  0001 C CNN
+F 1 "+3V3" H 6900 2600 50  0000 C CNN
+F 2 "" H 6850 2450 50  0001 C CNN
+F 3 "" H 6850 2450 50  0001 C CNN
+	1    6850 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 5350 8850 5300
+	6850 2750 6850 2800
+Text GLabel 6950 2800 2    50   Output ~ 0
+LDR
 Wire Wire Line
-	8850 5300 8900 5300
+	6950 2800 6850 2800
+Connection ~ 6850 2800
+Wire Wire Line
+	6850 2800 6850 2850
+Text GLabel 8000 3950 0    50   Output ~ 0
+LDR
+Text GLabel 8000 4150 0    47   Input ~ 0
+HUM2_IN
+Text GLabel 8000 4250 0    47   Input ~ 0
+HUM3_IN
+$Comp
+L power:+3V3 #PWR025
+U 1 1 5C1F7FA2
+P 6850 3650
+F 0 "#PWR025" H 6850 3500 50  0001 C CNN
+F 1 "+3V3" H 6850 3800 50  0000 C CNN
+F 2 "" H 6850 3650 50  0001 C CNN
+F 3 "" H 6850 3650 50  0001 C CNN
+	1    6850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5C1F820D
+P 6850 4250
+F 0 "#PWR026" H 6850 4000 50  0001 C CNN
+F 1 "GND" H 6855 4077 50  0000 C CNN
+F 2 "" H 6850 4250 50  0001 C CNN
+F 3 "" H 6850 4250 50  0001 C CNN
+	1    6850 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 7250 3950 2    50   Output ~ 0
+DHT
+$Comp
+L HUA-rescue:CONN_01X02-conn P12
+U 1 1 5C31672A
+P 10300 3000
+F 0 "P12" H 10250 2850 50  0000 L CNN
+F 1 "HUM2_SENSOR" V 10400 2700 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10300 3000 50  0001 C CNN
+F 3 "" H 10300 3000 50  0000 C CNN
+	1    10300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2850 9800 2800
+Wire Wire Line
+	10000 2950 10100 2950
+Wire Wire Line
+	10000 2800 10000 2950
+Wire Wire Line
+	10100 3050 10000 3050
+Wire Wire Line
+	10000 3050 10000 3200
+Wire Wire Line
+	10000 3200 9950 3200
+Wire Wire Line
+	9800 3200 9800 3150
+$Comp
+L device:R R22
+U 1 1 5C31673F
+P 9600 3200
+F 0 "R22" V 9500 3200 50  0000 C CNN
+F 1 "1k" V 9600 3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9530 3200 50  0001 C CNN
+F 3 "" H 9600 3200 50  0000 C CNN
+	1    9600 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 3200 9800 3200
+Connection ~ 9800 3200
+$Comp
+L device:R R20
+U 1 1 5C316748
+P 9400 3400
+F 0 "R20" V 9500 3400 50  0000 C CNN
+F 1 "100k" V 9400 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9330 3400 50  0001 C CNN
+F 3 "" H 9400 3400 50  0000 C CNN
+	1    9400 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9400 3250 9400 3200
+Wire Wire Line
+	9400 3200 9450 3200
+$Comp
+L power:GND #PWR031
+U 1 1 5C316751
+P 9400 3550
+F 0 "#PWR031" H 9400 3300 50  0001 C CNN
+F 1 "GND" H 9405 3377 50  0000 C CNN
+F 2 "" H 9400 3550 50  0001 C CNN
+F 3 "" H 9400 3550 50  0001 C CNN
+	1    9400 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 9350 3200 0    47   Output ~ 0
+HUM2_IN
+Wire Wire Line
+	9350 3200 9400 3200
+Connection ~ 9400 3200
+Wire Wire Line
+	9800 2800 10000 2800
+$Comp
+L device:R R24
+U 1 1 5C31675B
+P 9800 2600
+F 0 "R24" V 9593 2600 50  0000 C CNN
+F 1 "1k" V 9800 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9730 2600 50  0001 C CNN
+F 3 "" H 9800 2600 50  0000 C CNN
+	1    9800 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9800 2750 9800 2800
+Connection ~ 9800 2800
+$Comp
+L power:+3V3 #PWR033
+U 1 1 5C316764
+P 9800 2450
+F 0 "#PWR033" H 9800 2300 50  0001 C CNN
+F 1 "+3V3" H 9800 2600 50  0000 C CNN
+F 2 "" H 9800 2450 50  0001 C CNN
+F 3 "" H 9800 2450 50  0001 C CNN
+	1    9800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L HUA-rescue:CONN_01X02-conn P13
+U 1 1 5C3250FD
+P 10350 4100
+F 0 "P13" H 10300 3950 50  0000 L CNN
+F 1 "HUM2_SENSOR" V 10450 3800 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10350 4100 50  0001 C CNN
+F 3 "" H 10350 4100 50  0000 C CNN
+	1    10350 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 3950 9850 3900
+Wire Wire Line
+	10050 4050 10150 4050
+Wire Wire Line
+	10050 3900 10050 4050
+Wire Wire Line
+	10150 4150 10050 4150
+Wire Wire Line
+	10050 4150 10050 4300
+Wire Wire Line
+	10050 4300 10000 4300
+Wire Wire Line
+	9850 4300 9850 4250
+$Comp
+L device:R R23
+U 1 1 5C325112
+P 9650 4300
+F 0 "R23" V 9550 4300 50  0000 C CNN
+F 1 "1k" V 9650 4300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9580 4300 50  0001 C CNN
+F 3 "" H 9650 4300 50  0000 C CNN
+	1    9650 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 4300 9850 4300
+Connection ~ 9850 4300
+$Comp
+L device:R R21
+U 1 1 5C32511B
+P 9450 4500
+F 0 "R21" V 9550 4500 50  0000 C CNN
+F 1 "100k" V 9450 4500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9380 4500 50  0001 C CNN
+F 3 "" H 9450 4500 50  0000 C CNN
+	1    9450 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9450 4350 9450 4300
+Wire Wire Line
+	9450 4300 9500 4300
+$Comp
+L power:GND #PWR032
+U 1 1 5C325124
+P 9450 4650
+F 0 "#PWR032" H 9450 4400 50  0001 C CNN
+F 1 "GND" H 9455 4477 50  0000 C CNN
+F 2 "" H 9450 4650 50  0001 C CNN
+F 3 "" H 9450 4650 50  0001 C CNN
+	1    9450 4650
+	1    0    0    -1  
+$EndComp
+Text GLabel 9400 4300 0    47   Output ~ 0
+HUM3_IN
+Wire Wire Line
+	9400 4300 9450 4300
+Connection ~ 9450 4300
+Wire Wire Line
+	9850 3900 10050 3900
+$Comp
+L device:R R26
+U 1 1 5C32512E
+P 9850 3700
+F 0 "R26" V 9643 3700 50  0000 C CNN
+F 1 "1k" V 9850 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9780 3700 50  0001 C CNN
+F 3 "" H 9850 3700 50  0000 C CNN
+	1    9850 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9850 3850 9850 3900
+Connection ~ 9850 3900
+$Comp
+L power:+3V3 #PWR034
+U 1 1 5C325137
+P 9850 3550
+F 0 "#PWR034" H 9850 3400 50  0001 C CNN
+F 1 "+3V3" H 9850 3700 50  0000 C CNN
+F 2 "" H 9850 3550 50  0001 C CNN
+F 3 "" H 9850 3550 50  0001 C CNN
+	1    9850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer_RTC:DS1307+ U3
+U 1 1 5C385448
+P 6250 1350
+F 0 "U3" H 6750 1200 50  0000 L CNN
+F 1 "DS1307+" H 6550 1000 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 6250 850 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf" H 6250 1150 50  0001 C CNN
+	1    6250 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 850  6150 900 
+Wire Wire Line
+	5750 1550 5700 1550
+Wire Wire Line
+	5700 1550 5700 1600
+Wire Wire Line
+	5700 1600 5550 1600
+Wire Wire Line
+	5550 1400 5700 1400
+Wire Wire Line
+	5700 1400 5700 1450
 Wire Notes Line
-	9400 3150 6350 3150
+	7350 550  7350 2150
 Wire Notes Line
-	6350 5850 9400 5850
+	7350 2150 5200 2150
 Wire Notes Line
-	9400 3150 9400 5850
+	5200 2150 5200 550 
+NoConn ~ 6750 1350
+Text GLabel 5650 1250 0    50   BiDi ~ 0
+SDA
+Text GLabel 5550 1150 0    50   BiDi ~ 0
+SCL
+$Comp
+L device:R_Small R13
+U 1 1 5C459EAE
+P 5700 1000
+F 0 "R13" H 5759 1046 50  0000 L CNN
+F 1 "1k" H 5759 955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5700 1000 50  0001 C CNN
+F 3 "~" H 5700 1000 50  0001 C CNN
+	1    5700 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1100 5700 1250
+Wire Wire Line
+	5700 1250 5750 1250
+Wire Wire Line
+	5700 1250 5650 1250
+Connection ~ 5700 1250
+$Comp
+L device:R_Small R12
+U 1 1 5C47B233
+P 5600 1000
+F 0 "R12" H 5450 1050 50  0000 L CNN
+F 1 "1k" H 5450 950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5600 1000 50  0001 C CNN
+F 3 "~" H 5600 1000 50  0001 C CNN
+	1    5600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1100 5600 1150
+Wire Wire Line
+	5600 1150 5550 1150
+Wire Wire Line
+	5600 1150 5750 1150
+Connection ~ 5600 1150
+Wire Wire Line
+	5700 900  5700 850 
+Wire Wire Line
+	5700 850  5650 850 
+Wire Wire Line
+	5600 850  5600 900 
+$Comp
+L power:+3V3 #PWR020
+U 1 1 5C4AE531
+P 6150 850
+F 0 "#PWR020" H 6150 700 50  0001 C CNN
+F 1 "+3V3" H 6165 1023 50  0000 C CNN
+F 2 "" H 6150 850 50  0001 C CNN
+F 3 "" H 6150 850 50  0001 C CNN
+	1    6150 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR019
+U 1 1 5C4BF859
+P 5650 800
+F 0 "#PWR019" H 5650 650 50  0001 C CNN
+F 1 "+3V3" H 5665 973 50  0000 C CNN
+F 2 "" H 5650 800 50  0001 C CNN
+F 3 "" H 5650 800 50  0001 C CNN
+	1    5650 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 800  5650 850 
+Connection ~ 5650 850 
+Wire Wire Line
+	5650 850  5600 850 
+Text GLabel 1000 1150 0    47   BiDi ~ 0
+SCL
+Text GLabel 1000 1250 0    47   BiDi ~ 0
+SDA
 Wire Notes Line
-	6350 3150 6350 5850
-Text Notes 6650 5800 0    50   ~ 0
-                        SENSOR MODULES\nWATER FLUX, SOIL HUMIDITY AND 3 EXTRA ONE WIRE SENSORS
+	6300 2200 10550 2200
+Text GLabel 1900 1650 2    47   Input ~ 0
+HUM2_IN
+Text GLabel 1900 1750 2    47   Input ~ 0
+HUM3_IN
+Text GLabel 1900 1850 2    50   Input ~ 0
+DHT
+$Comp
+L power:+3V3 #PWR08
+U 1 1 5C539B26
+P 1900 1350
+F 0 "#PWR08" H 1900 1200 50  0001 C CNN
+F 1 "+3V3" V 1915 1478 50  0000 L CNN
+F 2 "" H 1900 1350 50  0001 C CNN
+F 3 "" H 1900 1350 50  0001 C CNN
+	1    1900 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5C539D3E
+P 1900 1450
+F 0 "#PWR09" H 1900 1200 47  0001 C CNN
+F 1 "GND" V 1905 1322 50  0000 R CNN
+F 2 "" H 1900 1450 50  0001 C CNN
+F 3 "" H 1900 1450 50  0001 C CNN
+	1    1900 1450
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 1000 1350
+NoConn ~ 1000 1450
+NoConn ~ 1000 1550
+NoConn ~ 1000 1650
+NoConn ~ 1000 1750
+NoConn ~ 1000 1950
+NoConn ~ 1000 2050
+Wire Notes Line
+	600  550  600  2650
+Wire Notes Line
+	2300 550  2300 2650
+Wire Notes Line
+	600  550  2300 550 
+Wire Notes Line
+	600  2650 2300 2650
+Wire Notes Line
+	6300 2200 6300 5200
+Wire Notes Line
+	10550 2200 10500 5200
+Wire Notes Line
+	10500 5200 6300 5200
+NoConn ~ 1000 850 
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5C744AEB
+P 1900 2250
+F 0 "#PWR0101" H 1900 2100 50  0001 C CNN
+F 1 "+3V3" V 1915 2378 50  0000 L CNN
+F 2 "" H 1900 2250 50  0001 C CNN
+F 3 "" H 1900 2250 50  0001 C CNN
+	1    1900 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5C744DEE
+P 1950 2400
+F 0 "#PWR0102" H 1950 2250 50  0001 C CNN
+F 1 "+3V3" H 1965 2573 50  0000 C CNN
+F 2 "" H 1950 2400 50  0001 C CNN
+F 3 "" H 1950 2400 50  0001 C CNN
+	1    1950 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C744F7F
+P 2150 2400
+F 0 "#FLG0101" H 2150 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 2150 2573 50  0001 C CNN
+F 2 "" H 2150 2400 50  0001 C CNN
+F 3 "~" H 2150 2400 50  0001 C CNN
+	1    2150 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 2400 2150 2350
+Wire Wire Line
+	2150 2350 1950 2350
+Wire Wire Line
+	1950 2350 1950 2400
+NoConn ~ 1900 2050
+NoConn ~ 1900 1950
+$Comp
+L power:GND #PWR0103
+U 1 1 5C76DD46
+P 1900 2150
+F 0 "#PWR0103" H 1900 1900 50  0001 C CNN
+F 1 "GND" V 1905 2022 50  0000 R CNN
+F 2 "" H 1900 2150 50  0001 C CNN
+F 3 "" H 1900 2150 50  0001 C CNN
+	1    1900 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 900  6150 900 
+Connection ~ 6250 900 
+Wire Wire Line
+	6250 900  6250 850 
+Connection ~ 6150 900 
+Wire Wire Line
+	6150 900  6150 950 
+$Comp
+L device:D D4
+U 1 1 5C77D6E6
+P 1450 5050
+F 0 "D4" V 1404 5129 50  0000 L CNN
+F 1 "1N4001" H 1300 4950 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1450 5050 50  0001 C CNN
+F 3 "~" H 1450 5050 50  0001 C CNN
+	1    1450 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L device:D D10
+U 1 1 5C77E108
+P 5100 5050
+F 0 "D10" V 5054 5129 50  0000 L CNN
+F 1 "1N4001" H 4950 4950 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5100 5050 50  0001 C CNN
+F 3 "~" H 5100 5050 50  0001 C CNN
+	1    5100 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L device:D D11
+U 1 1 5C77E3E2
+P 5150 3400
+F 0 "D11" V 5104 3479 50  0000 L CNN
+F 1 "1N4001" H 5000 3300 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P10.16mm_Horizontal" H 5150 3400 50  0001 C CNN
+F 3 "~" H 5150 3400 50  0001 C CNN
+	1    5150 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L device:D D7
+U 1 1 5C77E8BC
+P 3300 3400
+F 0 "D7" V 3254 3479 50  0000 L CNN
+F 1 "1N4001" H 3150 3300 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3300 3400 50  0001 C CNN
+F 3 "~" H 3300 3400 50  0001 C CNN
+	1    3300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L device:D D3
+U 1 1 5C77EDDA
+P 1450 3400
+F 0 "D3" V 1404 3479 50  0000 L CNN
+F 1 "1N4001" H 1300 3300 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1450 3400 50  0001 C CNN
+F 3 "~" H 1450 3400 50  0001 C CNN
+	1    1450 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R_POT_TRIM RV1
+U 1 1 5C780E49
+P 8250 3000
+F 0 "RV1" H 8180 3046 50  0000 R CNN
+F 1 "20k" V 8250 3050 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 8250 3000 50  0001 C CNN
+F 3 "~" H 8250 3000 50  0001 C CNN
+	1    8250 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2750 8250 2800
+Wire Wire Line
+	8400 3000 8400 3200
+Connection ~ 8400 3200
+Wire Wire Line
+	8400 3200 8450 3200
+Wire Wire Line
+	8250 2800 8450 2800
+Wire Wire Line
+	8450 2800 8450 2950
+Connection ~ 8250 2800
+Wire Wire Line
+	8250 2800 8250 2850
+$Comp
+L device:R_POT_TRIM RV2
+U 1 1 5C7FAFDA
+P 9800 3000
+F 0 "RV2" H 9730 3046 50  0000 R CNN
+F 1 "20k" V 9800 3050 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 9800 3000 50  0001 C CNN
+F 3 "~" H 9800 3000 50  0001 C CNN
+	1    9800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 3200 9950 3000
+Connection ~ 9950 3200
+Wire Wire Line
+	9950 3200 9800 3200
+$Comp
+L device:R_POT_TRIM RV3
+U 1 1 5C8176D9
+P 9850 4100
+F 0 "RV3" H 9780 4146 50  0000 R CNN
+F 1 "20k" V 9850 4150 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 9850 4100 50  0001 C CNN
+F 3 "~" H 9850 4100 50  0001 C CNN
+	1    9850 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4100 10000 4300
+Connection ~ 10000 4300
+Wire Wire Line
+	10000 4300 9850 4300
+$Comp
+L ADC_MCU_MODULE-cache:ADC_MCU_MODULE-rescue:ADS1115 U5
+U 1 1 5C8295F4
+P 8650 4550
+F 0 "U5" H 8778 4758 60  0000 L CNN
+F 1 "ADS1115" V 8600 4550 60  0000 L CNN
+F 2 "ADS1115:ADS1115" H 8650 4550 60  0001 C CNN
+F 3 "" H 8650 4550 60  0001 C CNN
+	1    8650 4550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8000 4350
+$Comp
+L power:GND #PWR0104
+U 1 1 5C855010
+P 8000 4450
+F 0 "#PWR0104" H 8000 4200 50  0001 C CNN
+F 1 "GND" V 8005 4322 50  0000 R CNN
+F 2 "" H 8000 4450 50  0001 C CNN
+F 3 "" H 8000 4450 50  0001 C CNN
+	1    8000 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 5C85514E
+P 8000 4850
+F 0 "#PWR0105" H 8000 4700 50  0001 C CNN
+F 1 "+3V3" V 8015 4978 50  0000 L CNN
+F 2 "" H 8000 4850 50  0001 C CNN
+F 3 "" H 8000 4850 50  0001 C CNN
+	1    8000 4850
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
