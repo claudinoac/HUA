@@ -1,0 +1,201 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L w_analog:NE555 U1
+U 1 1 5C083CD6
+P 5550 3550
+F 0 "U1" H 5750 3200 60  0000 C CNN
+F 1 "NE555" H 5300 3200 60  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket_LongPads" H 5550 3550 60  0001 C CNN
+F 3 "/mnt/dati/documenti/Elettronica/DATA_SHEET/Elettronici/Integrati/Analogici/Clock/ST_NE555.pdf" H 5550 2844 60  0001 C CNN
+	1    5550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:CONN_01X03 P1
+U 1 1 5C083DB2
+P 5600 2300
+F 0 "P1" V 5565 2112 50  0000 R CNN
+F 1 "OUT" V 5474 2112 50  0000 R CNN
+F 2 "w_conn_kk100:kk100_22-23-2031" H 5600 2300 50  0001 C CNN
+F 3 "" H 5600 2300 50  0000 C CNN
+	1    5600 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5C083E49
+P 5450 2550
+F 0 "#PWR0101" H 5450 2400 50  0001 C CNN
+F 1 "+5V" V 5465 2678 50  0000 L CNN
+F 2 "" H 5450 2550 50  0000 C CNN
+F 3 "" H 5450 2550 50  0000 C CNN
+	1    5450 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C083EB4
+P 5750 2550
+F 0 "#PWR0102" H 5750 2300 50  0001 C CNN
+F 1 "GND" V 5755 2422 50  0000 R CNN
+F 2 "" H 5750 2550 50  0000 C CNN
+F 3 "" H 5750 2550 50  0000 C CNN
+	1    5750 2550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5600 2500 3    50   Input ~ 0
+SGN
+Wire Wire Line
+	5750 2550 5700 2550
+Wire Wire Line
+	5700 2550 5700 2500
+Wire Wire Line
+	5450 2550 5500 2550
+Wire Wire Line
+	5500 2550 5500 2500
+$Comp
+L power:+5V #PWR0103
+U 1 1 5C083F39
+P 5600 3050
+F 0 "#PWR0103" H 5600 2900 50  0001 C CNN
+F 1 "+5V" H 5615 3223 50  0000 C CNN
+F 2 "" H 5600 3050 50  0000 C CNN
+F 3 "" H 5600 3050 50  0000 C CNN
+	1    5600 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3050 5600 3100
+Wire Wire Line
+	5600 3100 5450 3100
+Wire Wire Line
+	5450 3100 5450 3150
+Wire Wire Line
+	5600 3100 5600 3150
+Connection ~ 5600 3100
+$Comp
+L device:R R2
+U 1 1 5C084062
+P 6400 3350
+F 0 "R2" H 6470 3396 50  0000 L CNN
+F 1 "470k" V 6400 3250 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6330 3350 50  0001 C CNN
+F 3 "" H 6400 3350 50  0000 C CNN
+	1    6400 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5950 3400 2    50   Output ~ 0
+SGN
+Wire Wire Line
+	6400 3500 6400 3550
+Wire Wire Line
+	6400 3550 5950 3550
+Wire Wire Line
+	6400 3100 5600 3100
+Wire Wire Line
+	6400 3200 6400 3100
+$Comp
+L device:R R1
+U 1 1 5C0843A1
+P 6200 3700
+F 0 "R1" V 5993 3700 50  0000 C CNN
+F 1 "470k" V 6200 3700 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6130 3700 50  0001 C CNN
+F 3 "" H 6200 3700 50  0000 C CNN
+	1    6200 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 3700 6400 3550
+Connection ~ 6400 3550
+Text GLabel 6050 3850 2    50   Output ~ 0
+SENS1
+$Comp
+L power:GND #PWR0105
+U 1 1 5C084F2E
+P 5550 3950
+F 0 "#PWR0105" H 5550 3700 50  0001 C CNN
+F 1 "GND" H 5550 3800 50  0000 C CNN
+F 2 "" H 5550 3950 50  0000 C CNN
+F 3 "" H 5550 3950 50  0000 C CNN
+	1    5550 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C1
+U 1 1 5C085004
+P 5000 3700
+F 0 "C1" V 5150 3650 50  0000 L CNN
+F 1 "10n" V 4850 3600 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 5038 3550 50  0001 C CNN
+F 3 "" H 5000 3700 50  0000 C CNN
+	1    5000 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5C085269
+P 4850 3700
+F 0 "#PWR0106" H 4850 3450 50  0001 C CNN
+F 1 "GND" H 4850 3550 50  0000 C CNN
+F 2 "" H 4850 3700 50  0000 C CNN
+F 3 "" H 4850 3700 50  0000 C CNN
+	1    4850 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3700 6400 3700
+Wire Wire Line
+	6050 3700 6000 3700
+Wire Wire Line
+	6050 3850 6000 3850
+Wire Wire Line
+	6000 3850 6000 3700
+Connection ~ 6000 3700
+Wire Wire Line
+	6000 3700 5950 3700
+Text GLabel 5150 3400 0    50   Output ~ 0
+SENS1
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C087ADE
+P 5500 2650
+F 0 "#FLG0101" H 5500 2745 50  0001 C CNN
+F 1 "PWR_FLAG" H 5500 2873 50  0001 C CNN
+F 2 "" H 5500 2650 50  0000 C CNN
+F 3 "" H 5500 2650 50  0000 C CNN
+	1    5500 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 2650 5500 2550
+Connection ~ 5500 2550
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C087CA8
+P 5700 2650
+F 0 "#FLG0102" H 5700 2745 50  0001 C CNN
+F 1 "PWR_FLAG" H 5700 2873 50  0001 C CNN
+F 2 "" H 5700 2650 50  0000 C CNN
+F 3 "" H 5700 2650 50  0000 C CNN
+	1    5700 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 2650 5700 2550
+Connection ~ 5700 2550
+$EndSCHEMATC

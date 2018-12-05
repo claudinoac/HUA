@@ -1,33 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:HUA-cache
 EELAYER 26 0
 EELAYER END
@@ -1330,7 +1301,7 @@ F 3 "" H 8250 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor:DHT11 U4
+L sensors:DHT11 U4
 U 1 1 5C1AF8C6
 P 6950 3950
 F 0 "U4" H 6720 3996 50  0000 R CNN
@@ -1948,17 +1919,6 @@ Wire Wire Line
 Connection ~ 10000 4300
 Wire Wire Line
 	10000 4300 9850 4300
-$Comp
-L ADC_MCU_MODULE-cache:ADC_MCU_MODULE-rescue:ADS1115 U5
-U 1 1 5C8295F4
-P 8650 4550
-F 0 "U5" H 8778 4758 60  0000 L CNN
-F 1 "ADS1115" V 8600 4550 60  0000 L CNN
-F 2 "ADS1115:ADS1115" H 8650 4550 60  0001 C CNN
-F 3 "" H 8650 4550 60  0001 C CNN
-	1    8650 4550
-	1    0    0    -1  
-$EndComp
 NoConn ~ 8000 4350
 $Comp
 L power:GND #PWR0104
@@ -1981,5 +1941,16 @@ F 2 "" H 8000 4850 50  0001 C CNN
 F 3 "" H 8000 4850 50  0001 C CNN
 	1    8000 4850
 	0    -1   -1   0   
+$EndComp
+$Comp
+L ADC_MCU_MODULE-cache:ADC_MCU_MODULE-rescue:ADS1115 U?
+U 1 1 5C0925F0
+P 8650 4550
+F 0 "U?" H 8777 4758 60  0000 L CNN
+F 1 "ADC_MCU_MODULE-rescue:ADS1115" H 8777 4652 60  0000 L CNN
+F 2 "" H 8650 4550 60  0001 C CNN
+F 3 "" H 8650 4550 60  0001 C CNN
+	1    8650 4550
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
